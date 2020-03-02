@@ -1,8 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.scss';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Navigation from './Router';
+import {Navigation} from './Router';
 
 
 function App() {

@@ -5,7 +5,7 @@ import {Curiosity} from './Curiosity';
 import {Spirit} from './Spirit';
 import {Opportunity} from "./Opportunity";
 
-export default function Navigation() {
+export function Navigation() {
     return (
         <Router>
             <div>
