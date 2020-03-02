@@ -14,7 +14,8 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "react-tsx": "^1.0.15"
   },
   "scripts": {
     "start": "react-scripts start",
