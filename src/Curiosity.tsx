@@ -3,7 +3,7 @@
 export function Curiosity() {
     return (
         <div>
-            <h2>Curiosity</h2>
+            <h2>Opportunity</h2>
         </div>
     );
 }

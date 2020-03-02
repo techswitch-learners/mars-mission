@@ -1,5 +1,4 @@
 ﻿import React from "react";
-// @ts-ignore
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import {Curiosity} from './Curiosity';
 import {Spirit} from './Spirit';
@@ -20,9 +19,9 @@ export function Navigation() {
                         <Link to="/opportunity">Opportunity</Link>
                     </li>
                 </ul>
-
+ 
                 <hr/>
-
+                
                 <Switch>
                     <Route exact path="/curiosity">
                         <Curiosity />
