@@ -4,7 +4,6 @@ import {Navigation} from './Router';
 
 
 function App() {
-    /*console.log(process.env.REACT_APP_nasaApiKey);*/
   return (
     <div>
       <header className="header">
