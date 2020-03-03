@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import {Navigation} from './Router';
+import {Footer} from "./Footer/Footer";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Navigation />
         </nav>
       </header>
+        <Footer/>
     </div>
   );
 }
