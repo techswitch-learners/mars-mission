@@ -22,6 +22,3 @@ export function parseApiData() {
     return parsedResult;
 }
 
-function mapApiData() {
-    
-}
