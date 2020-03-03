@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {getImageOfTheDay} from "./Components/ApiFetch/ApodApiFetch";
 
 

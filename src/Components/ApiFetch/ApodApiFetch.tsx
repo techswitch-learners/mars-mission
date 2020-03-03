@@ -11,7 +11,7 @@ export async function getImageOfTheDay(): Promise<ImageOfTheDay>  {
     return await apiResponse.json();
 }
 
-export async function imageOfTheDayUrl() {
+export function imageOfTheDayUrl() {
     const [image, setImage] = useState<string>("");
 
     useEffect(() => {

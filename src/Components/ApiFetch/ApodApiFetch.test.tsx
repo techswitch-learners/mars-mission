@@ -1,5 +1,4 @@
-﻿import React from 'react';
-import {getImageOfTheDay} from "./ApodApiFetch";
+﻿import {getImageOfTheDay} from "./ApodApiFetch";
 
 
 test('check function returns JSON data', async () => {
