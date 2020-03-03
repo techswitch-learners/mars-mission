@@ -6,6 +6,8 @@ import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
 import {NavBar} from "./NavBar/NavBar";
 import {Home} from "./Pages/Home/Home";
+import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
+
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
                     </Route>
                     <Route exact path="/curiosity">
                         <Curiosity />
+                    </Route>
+                    <Route exact path="/curiosity/discover-rovers">
+                        <DiscoverRoversPage />
                     </Route>
                     <Route path="/spirit">
                         <Spirit />
