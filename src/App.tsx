@@ -5,9 +5,10 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
-
+import {parseApiData} from "./Components/ApiFetch/ApodApiFetch";
 
 function App() {
+    parseApiData();
   return (
       <Router>
             <div>
