@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './App.scss';
 import {Navigation} from './TempNav';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
-import {getImageOfTheDay} from "./Components/ApiFetch/ApodApiFetch";
 
 function App() {
     
