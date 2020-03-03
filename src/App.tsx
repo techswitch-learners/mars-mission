@@ -8,13 +8,13 @@ import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage
 import {parseApiData} from "./Components/ApiFetch/ApodApiFetch";
 
 function App() {
-    parseApiData();
   return (
       <Router>
             <div>
               <header className="header">
                 <nav>
                     <h1>Mars Mission</h1>
+                    {process.env.REACT_APP_NASA_API_KEY}
                   <Navigation />
                 </nav>
               </header>
