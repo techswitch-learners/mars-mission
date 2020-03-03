@@ -1,9 +1,20 @@
 .photocard{
+  border : solid 2px black;
+  display : flex;
+  flex-direction : column;
+  align-items: center;
+  width : 300px;
+  height : 450px;
   
   .contentImage{
-    
+    //border : solid 1px crimson;
+    width : 90%;
+    height : 68%;
   }
   .contentDescription{
-    
+    //border : solid 1px cornflowerblue;
+    height: 25%;
+    width: 90%;
+    text-align: center;
   }
 }
