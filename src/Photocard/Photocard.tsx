@@ -11,10 +11,10 @@ interface PhotocardProps {
 function Photocard (props : PhotocardProps) {
     return (
         <div className="photocard">
-            <img className="photocardImage" 
+            <img className="contentImage" 
                  src={props.imageUrl} 
                  alt={props.altText}/>
-            <p>desc</p>
+            <p className="contentDescription">{props.description}</p>
         </div>
     )
 }
