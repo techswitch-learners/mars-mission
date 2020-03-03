@@ -10,6 +10,92 @@
   justify-content: space-between;
   align-items: center;
 
+
+  /*Hamburger code here:*/
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .4s ease-in;
+  }
+
+  .menuIcon {
+    cursor: pointer;
+    display: inline-block;
+    /*float: right;*/
+    padding: 28px 44px;
+    position: relative;
+    user-select: none;
+    order: 1;
+    justify-self: flex-end;
+
+    .navIcon {
+      background: white;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+
+    .navIcon:before,
+    .navIcon:after {
+      background: white;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+
+    .navIcon:before {
+      top: 5px;
+    }
+
+    .navIcon:after {
+      top: -5px;
+    }
+  }
+
+
+  .menuButton {
+    display: none;
+  }
+
+  .menuButton:checked ~ .menu {
+    max-height: 50px;
+  }
+
+  .menuButton:checked ~ .menuIcon .navIcon {
+    background: transparent;
+  }
+
+  .menuButton:checked ~ .menuIcon .navIcon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menuButton:checked ~ .menuIcon .navIcon:after {
+    transform: rotate(45deg);
+  }
+
+  .menuButton:checked ~ .menuIcon:not(.steps) .navIcon:before,
+  .menuButton:checked ~ .menuIcon:not(.steps) .navIcon:after {
+    top: 0;
+  }
+
+
+  /* Hamburger code ends*/
+
+
   .logo {
     padding-left: 20px;
     height: 50px;
