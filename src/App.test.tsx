@@ -4,7 +4,7 @@ import App from './App';
 
 test('check app renders and page contains header text', () => {
     let app = render(<App />);
-    const header = app.getByText('/curiosity');
+    const header = app.getByTestId("header");
     expect(header).toBeInTheDocument();
 });
 

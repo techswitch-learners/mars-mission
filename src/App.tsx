@@ -14,7 +14,7 @@ function App() {
   return (
       <Router>
             <div>
-              <header className="header">
+              <header className="header" data-testid="header">
                   <NavBar />
               </header>
                 <Switch>
