@@ -1,3 +1,9 @@
+
+* Mars Mission *
+
+Accessing API Key:
+ You can access the NASA api key with: process.env.REACT_APP_NASA_API_KEY
+=======
 # Mars Mission
 
 An educational website for inspiring interest in Mars.
@@ -23,5 +29,3 @@ To set this up:
 4. Make sure ".env" tis listed in your .gitignore file.
 5. Access your API key using `process.env.REACT_APP_NASA_API_KEY`
 
-
-```
