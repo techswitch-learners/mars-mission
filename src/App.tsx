@@ -14,11 +14,11 @@ function App() {
   return (
       <Router>
             <div>
-              <header className="header">
+              <header className="header" data-testid="header">
                   <NavBar />
               </header>
                 <Switch>
-                    <Route exact path="/home">
+                    <Route exact path="">
                         <Home />
                     </Route>
                     <Route exact path="/curiosity">

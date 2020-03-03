@@ -10,7 +10,7 @@ function NavBar() {
             <label className="menuIcon" htmlFor="menuButton">
                 <span className="navIcon"/>
             </label>
-            <Link to='/home'><img className="logo" src="nasa-logo.png"/></Link>
+            <Link to=''><img className="logo" src={`${process.env.PUBLIC_URL}/Images/nasa-logo.png`} /></Link>
             <ul className="menu">
                 <li className="navItem">
                     <Link className="navLink" to='/curiosity'>Curiosity</Link>
