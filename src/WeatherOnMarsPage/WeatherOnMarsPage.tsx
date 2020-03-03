@@ -1,5 +1,6 @@
 ﻿import React from "react";
 import {WeatherOnMarsImage} from "../WeatherOnMarsImage/WeatherOnMarsImage";
+import './WeatherOnMarsPage.scss';
 
 
 function WeatherOnMarsPage() {
