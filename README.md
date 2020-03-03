@@ -29,4 +29,3 @@ To set this up:
 4. Make sure ".env" tis listed in your .gitignore file.
 5. Access your API key using `process.env.REACT_APP_NASA_API_KEY`
 
-
