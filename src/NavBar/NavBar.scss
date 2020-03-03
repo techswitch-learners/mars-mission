@@ -22,16 +22,16 @@
   }
 
   .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .4s ease-in;
+    //clear: both;
+    //max-height: 0;
+    //transition: max-height .4s ease-in;
   }
 
   .menuIcon {
     cursor: pointer;
     display: inline-block;
     /*float: right;*/
-    padding: 28px 44px;
+    padding: 20px;
     position: relative;
     user-select: none;
     order: 1;
@@ -72,7 +72,13 @@
   }
 
   .menuButton:checked ~ .menu {
-    max-height: 50px;
+    background-color: darkgrey;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    max-height: 200px;
+    width: 130px;
+    justify-content: center;
   }
 
   .menuButton:checked ~ .menuIcon .navIcon {
@@ -102,6 +108,7 @@
   }
 
   .menu {
+    max-height: 0;
     padding-right: 20px;
     list-style: none;
     display: flex;
