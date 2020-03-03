@@ -5,6 +5,7 @@ import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
 import {NavBar} from "./NavBar/NavBar";
+import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
                 <Switch>
                     <Route exact path="/curiosity">
                         <Curiosity />
+                    </Route>
+                    <Route exact path="/curiosity/discover-rovers">
+                        <DiscoverRoversPage />
                     </Route>
                     <Route path="/spirit">
                         <Spirit />
