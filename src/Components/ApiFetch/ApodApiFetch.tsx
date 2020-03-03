@@ -10,9 +10,9 @@ export async function getImageOfTheDay(): Promise<ImageOfTheDay>  {
     const apiResponse = await fetch(apiUrl);
     return await apiResponse.json();
 }
-
+const [image, setImage] = useState<string>("");
 export function imageOfTheDayUrl() {
-    const [image, setImage] = useState<string>("");
+    
 
     useEffect(() => {
         getImageOfTheDay().then(imageOfTheDay => setImage(imageOfTheDay.url));
