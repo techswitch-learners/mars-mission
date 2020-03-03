@@ -4,13 +4,14 @@ import {Url} from "../../Models/Url"
 
 interface roverNavItemProps {
     imageUrl: Url;
-    altText: string;
-    description: string;
+    align : 'leftAlign' | 'rightAlign';
+    altText : string;
+    description : string;
 }
 
-export function RoverNavItem (props : roverNavItemProps){
+export function RoverNavItem (props : roverNavItemProps):JSX.Element {
     return (
-        <li className="roverNavItem">
+        <li className={`roverNavItem ${props.align}`}>
             <img className="roverNavImage" src={props.imageUrl} alt={props.altText} />
             <p className="roverNavLink">{props.description}</p>
         </li>

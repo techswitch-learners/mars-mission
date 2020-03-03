@@ -1,12 +1,26 @@
 ﻿.roverNav{
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-left: 0;
   border: solid 2px black;
+  list-style: none;
   .roverNavItem{
     border: solid 2px red;
+    display: flex;
     .roverNavImage{
-      
+      border-radius: 50%;
     }
     .roverNavLink{
       
     }
+  }
+  .rightAlign{
+    flex-direction: row;
+    justify-content : flex-start;
+    
+  }
+  .leftAlign{
+    flex-direction: row-reverse;
+    justify-content : flex-start;
   }
 }
