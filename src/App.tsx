@@ -5,7 +5,7 @@ import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
 import {NavBar} from "./NavBar/NavBar";
-
+import {Home} from "./Pages/Home/Home";
 
 function App() {
   return (
@@ -15,6 +15,9 @@ function App() {
                   <NavBar />
               </header>
                 <Switch>
+                    <Route exact path="/home">
+                        <Home />
+                    </Route>
                     <Route exact path="/curiosity">
                         <Curiosity />
                     </Route>
