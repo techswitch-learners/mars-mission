@@ -1,26 +1,25 @@
 ﻿import React from 'react';
 import {Link} from 'react-router-dom';
-import logo from "./logo.svg";
+import './NavBar.scss';
 
 function NavBar(){
 
     return (
 
-        <div className="navBar bar">
-
-            <Link className="navBar logo" to='/home'>Logo</Link>
+        <nav className="navBar bar">
+            <Link to='/home'><img className="logo" src="nasa-logo.png"/></Link>
             <ul className="navBar menu">
-                <li className="navBar navLink">
-                    <Link to='/curiosity'>Curiosity</Link>
+                <li className="navBar navItem">
+                    <Link className="navLink" to='/curiosity'>Curiosity</Link>
                 </li>
-                <li className="navBar navLink">
-                    <Link to='/opportunity'>Opportunity</Link>
+                <li className="navBar navItem">
+                    <Link className="navLink" to='/opportunity'>Opportunity</Link>
                 </li>
-                <li className="navBar navLink">
-                    <Link to='/spirit'>Spirit</Link>
+                <li className="navBar navItem">
+                    <Link className="navLink" to='/spirit'>Spirit</Link>
                 </li>
             </ul>
-        </div>
+        </nav>
     );
 }
 
