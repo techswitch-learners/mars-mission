@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.scss';
-import {Navigation} from './TempNav';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
+import {NavBar} from "./NavBar/NavBar";
+import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
 
 function App() {
     
@@ -12,14 +13,14 @@ function App() {
       <Router>
             <div>
               <header className="header">
-                <nav>
-                    <h1>Mars Mission</h1>
-                  <Navigation />
-                </nav>
+                  <NavBar />
               </header>
                 <Switch>
                     <Route exact path="/curiosity">
                         <Curiosity />
+                    </Route>
+                    <Route exact path="/curiosity/discover-rovers">
+                        <DiscoverRoversPage />
                     </Route>
                     <Route path="/spirit">
                         <Spirit />
