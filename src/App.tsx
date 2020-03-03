@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import {Navigation} from './Router';
 import {Footer} from "./Footer/Footer";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
@@ -19,7 +18,7 @@ function App() {
                   <NavBar />
               </header>
                 <Switch>
-                    <Route exact path="/home">
+                    <Route exact path="">
                         <Home />
                     </Route>
                     <Route exact path="/curiosity">
