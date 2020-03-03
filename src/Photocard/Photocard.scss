@@ -7,13 +7,18 @@
   height : 450px;
   
   .contentImage{
-    //border : solid 1px crimson;
     width : 90%;
     height : 68%;
   }
+  
+  .contentTitle{
+    height: 10%;
+    width: 90%;
+    text-align: center;
+  }
+  
   .contentDescription{
-    //border : solid 1px cornflowerblue;
-    height: 25%;
+    height: 15%;
     width: 90%;
     text-align: center;
   }
