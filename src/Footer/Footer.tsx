@@ -2,7 +2,7 @@
 import "./Footer.scss";
 export function Footer(){
     return (
-        <footer data-testid="footer">
+        <footer className="footer" data-testid="footer">
           Made in London with &#10084;&#65039; &copy; 2020 TechSwitch
         </footer>
     );
