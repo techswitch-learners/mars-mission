@@ -8,6 +8,8 @@ import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage
 import {NavBar} from "./NavBar/NavBar";
 import {Home} from "./Pages/Home/Home";
 import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
+import {HeroImageOfTheDay} from "./Components/HeroImageOfTheDay/HeroImageOfTheDay";
+
 
 function App() {
     
@@ -17,6 +19,7 @@ function App() {
               <header className="header">
                   <NavBar />
               </header>
+                <HeroImageOfTheDay/>
                 <Switch>
                     <Route exact path="/home">
                         <Home />
