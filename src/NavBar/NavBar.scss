@@ -13,20 +13,6 @@
 
   /*Hamburger code here:*/
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #fff;
-  }
-
-  .menu {
-    //clear: both;
-    //max-height: 0;
-    //transition: max-height .4s ease-in;
-  }
-
   .menuIcon {
     cursor: pointer;
     display: inline-block;
@@ -76,8 +62,8 @@
     position: fixed;
     top: 100px;
     right: 0;
-    max-height: 200px;
-    width: 130px;
+    width: 150px;
+    max-height: 300px;
     justify-content: center;
   }
 
@@ -98,7 +84,6 @@
     top: 0;
   }
 
-
   /* Hamburger code ends*/
 
 
@@ -109,10 +94,13 @@
 
   .menu {
     max-height: 0;
-    padding-right: 20px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
 
     .navItem {
       padding: 10px;
@@ -128,6 +116,35 @@
       }
     }
   }
+
+  //no Hamburger for tablets and larger
+
+  @media (min-width: 768px) {
+
+    .menu {
+      font-size: 22px;
+      padding-right: 10px;
+      max-height: none;
+    }
+
+    .menuIcon {
+      display: none;
+    }
+  }
+
+  //larger font-size and logo for laptops/desktop
+
+  @media (min-width: 1024px) {
+
+    .menu {
+      font-size: 28px;
+    }
+
+    .logo {
+      height: 75px;
+    }
+  }
+
 }
 
 

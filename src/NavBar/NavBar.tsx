@@ -2,31 +2,27 @@
 import {Link} from 'react-router-dom';
 import './NavBar.scss';
 
-function NavBar(){
+function NavBar() {
 
     return (
-<div>
-    <nav className="navBar">
-        <input className="menuButton" type="checkbox" id="menuButton"/>
-        <label className="menuIcon" htmlFor="menuButton">
-            <span className="navIcon"></span>
-        </label>
-        <Link to='/home'><img className="logo" src="nasa-logo.png"/></Link>
-        <ul className="menu">
-            <li className="navItem">
-                <Link className="navLink" to='/curiosity'>Curiosity</Link>
-            </li>
-            <li className="navItem">
-                <Link className="navLink" to='/opportunity'>Opportunity</Link>
-            </li>
-            <li className="navItem">
-                <Link className="navLink" to='/spirit'>Spirit</Link>
-            </li>
-        </ul>
-    </nav>
-    
-</div>
-        
+        <nav className="navBar">
+            <input className="menuButton" type="checkbox" id="menuButton"/>
+            <label className="menuIcon" htmlFor="menuButton">
+                <span className="navIcon"/>
+            </label>
+            <Link to='/home'><img className="logo" src="nasa-logo.png"/></Link>
+            <ul className="menu">
+                <li className="navItem">
+                    <Link className="navLink" to='/curiosity'>Curiosity</Link>
+                </li>
+                <li className="navItem">
+                    <Link className="navLink" to='/opportunity'>Opportunity</Link>
+                </li>
+                <li className="navItem">
+                    <Link className="navLink" to='/spirit'>Spirit</Link>
+                </li>
+            </ul>
+        </nav>
     );
 }
 
