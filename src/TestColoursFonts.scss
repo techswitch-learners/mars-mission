@@ -3,26 +3,26 @@
 
 
 div{
-  font-family: $fontFamilyOpenSans;
+  font-family: $font-family-OpenSans;
 }
 p {
 
-  font-size: $paraFont-size;
+  font-size: $para-font-size;
 }
 
 h3{
-  font-size: $headerThreeFont-size;
+  font-size: $header-three-font-size;
 }
 h2{
-  font-size: $headerTwoFont-size;
+  font-size: $header-two-font-size;
 }
 h1{
-  font-size: $headerOneFont-size;
+  font-size: $header-one-font-size;
 }
 .quoteClass{
-  font-size: $quoteFont-size;
+  font-size: $quote-font-size;
   font-style: italic;
 }
 .labelClass{
-  font-size: $labelFont-size;
+  font-size: $label-font-size;
 }
