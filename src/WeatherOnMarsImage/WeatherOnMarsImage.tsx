@@ -1,13 +1,14 @@
 ﻿import React from "react";
 
 
-function WeatherOnMars() {
+function WeatherOnMarsImage() {
 
 
     return (
             <iframe
+                className="weatherImage"
                 src='https://mars.nasa.gov/layout/embed/image/insightweather/'
-                width='800'
+                width='750'
                 height='530'
                 scrolling='no'
                 frameBorder='0'
@@ -15,5 +16,4 @@ function WeatherOnMars() {
     );
 }
 
-
-export {WeatherOnMars};
+export {WeatherOnMarsImage};
