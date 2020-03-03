@@ -1,4 +1,4 @@
-﻿import React from "react";
+﻿import React, {useEffect, useState} from "react";
 
 interface ImageOfTheDay {
     url: string;
@@ -11,3 +11,14 @@ export async function getImageOfTheDay(): Promise<ImageOfTheDay>  {
     return await apiResponse.json();
 }
 
+export async function imageOfTheDayUrl() {
+    const [image, setImage] = useState<string>("");
+
+    useEffect(() => {
+        getImageOfTheDay().then(imageOfTheDay => setImage(imageOfTheDay.url));
+    }, []);
+    
+    return {image};
+}
+
+    

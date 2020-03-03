@@ -8,11 +8,6 @@ import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage
 import {getImageOfTheDay} from "./Components/ApiFetch/ApodApiFetch";
 
 function App() {
-    const [image, setImage] = useState<string>("");
-    
-    useEffect(() => {
-        getImageOfTheDay().then(imageOfTheDay => setImage(imageOfTheDay.url));
-    }, []);
     
   return (
       <Router>
@@ -20,7 +15,6 @@ function App() {
               <header className="header">
                 <nav>
                     <h1>Mars Mission</h1>
-                    {image}
                   <Navigation />
                 </nav>
               </header>
