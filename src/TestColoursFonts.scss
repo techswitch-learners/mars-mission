@@ -1,0 +1,28 @@
+﻿@import './Constants.scss';
+
+
+
+div{
+  font-family: $fontFamilyOpenSans;
+}
+p {
+
+  font-size: $paraFont-size;
+}
+
+h3{
+  font-size: $headerThreeFont-size;
+}
+h2{
+  font-size: $headerTwoFont-size;
+}
+h1{
+  font-size: $headerOneFont-size;
+}
+.quoteClass{
+  font-size: $quoteFont-size;
+  font-style: italic;
+}
+.labelClass{
+  font-size: $labelFont-size;
+}

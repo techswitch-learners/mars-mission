@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
+import {TestColoursFonts} from "./TestColoursFonts";
 import {NavBar} from "./NavBar/NavBar";
 
 
@@ -24,9 +25,13 @@ function App() {
                     <Route path="/opportunity">
                         <Opportunity />
                     </Route>
+                    <Route path="/test">
+                        <TestColoursFonts/>
+                    </Route>
                 </Switch>
             </div>
       </Router>
+      
   );
 }
 
