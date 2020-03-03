@@ -7,8 +7,8 @@ import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage
 import {NavBar} from "./NavBar/NavBar";
 import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
 
-
 function App() {
+    
   return (
       <Router>
             <div>
