@@ -1,8 +1,8 @@
 ﻿import React from "react";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import {Curiosity} from './Curiosity';
-import {Spirit} from './Spirit';
-import {Opportunity} from "./Opportunity";
+import {Curiosity} from './Pages/Curiosity/Curiosity'
+import {Spirit} from './Pages/Spirit/Spirit';
+import {Opportunity} from "./Pages/Opportunity/Opportunity";
 
 export function Navigation() {
     return (
