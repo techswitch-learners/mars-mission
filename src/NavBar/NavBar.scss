@@ -1,11 +1,6 @@
 ﻿.navBar {
-
   text-decoration: none;
   font-size: 20px;
-
-}
-
-.bar {
   background-color: grey;
   position: fixed;
   display: flex;
@@ -14,30 +9,39 @@
   top: 0;
   justify-content: space-between;
   align-items: center;
+
+  .logo {
+    padding-left: 20px;
+    height: 50px;
+  }
+
+  .menu {
+    padding-right: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    .navItem {
+      padding: 10px;
+
+      .navLink {
+        text-decoration: none;
+        color: blue;
+      }
+
+      .navLink:hover {
+        text-decoration: underline;
+        color: white;
+      }
+    }
+  }
 }
 
-.logo {
-  padding-left: 20px;
-  height: 50px;
-}
 
-.menu {
-padding-right: 20px;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.navItem{
-  padding: 10px;
-}
 
-.navLink {
-  text-decoration: none;
-  color: blue;
-}
 
-.navLink:hover{
-  text-decoration: underline;
-  color: white;
-}
+
+
+
+
