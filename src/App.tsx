@@ -19,6 +19,9 @@ function App() {
                     <Route exact path="/curiosity">
                         <Curiosity />
                     </Route>
+                    <Route exact path="/curiosity/on-this-day">
+                        <DateInputForm />
+                    </Route>
                     <Route path="/spirit">
                         <Spirit />
                     </Route>

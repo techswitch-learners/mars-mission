@@ -6,19 +6,12 @@ export function DateInputForm() {
     return (
         <div >
             <form className="form">
-                <label>DAY: 
+                <label>DATE: 
                     <br/>
-                    <input type="text" name="day"/>
+                    <input type="date" id="date" name="date"
+                           min="12-08-05" max="2020-03-03" />
                 </label>
-                <label>MONTH:
-                    <br/>
-                    <input type="text" name="month"/>
-                </label>
-                <label>YEAR:
-                    <br/>
-                    <input type="text" name="year"/>
-                </label>
-                <input type="submit" name="submit"/>
+                <input type="submit" name="Submit" />
             </form>
         </div>
     );
