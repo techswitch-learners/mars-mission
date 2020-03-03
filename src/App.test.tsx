@@ -13,6 +13,6 @@ test('check app renders and page contains header text', () => {
 
 test('check page contains footer', () => {
     let app = render(<App />);
-   const footer = document.getElementById('footer');
+   const footer = app.getByTestId("footer");
    expect(footer).toBeInTheDocument();
 });
