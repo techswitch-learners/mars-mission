@@ -1,9 +1,11 @@
-﻿.roverNav{
+﻿@import "./src/ConstantsMixins";
+
+.roverNav{
   margin-top: 100px;
   padding-left: 0;
-  border: solid 2px black;
+  border: solid 2px $background-color-dark;
   .roverNavItem{
-    border: solid 2px red;
+    border: solid 2px $accent-color-mars-red;
     display: flex;
     align-items: center;
     height : 30vh;

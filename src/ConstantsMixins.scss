@@ -1,10 +1,18 @@
-﻿
+﻿//Size Reference
+$Scale: 1vw;
+
 /* Site colours */
-$background-blue: rgba(36, 30, 78, 1);
-$accent-color-red: rgba(150, 2, 0, 1);
-$secondary-color-orange: rgba(206, 108, 71, 1);
-$foreground-color-yellow: rgba(244, 162, 97, 1);
-$light-yellow-font: rgba(234, 218, 162, 1);
+$background-color-dark: rgb(23, 3, 29);
+$background-color-light: rgb(182, 188, 244);
+$accent-color-mars-red: rgb(255, 0, 18);
+$secondary-color-mid-tone: rgb(255, 84, 9);
+$foreground-color-light: rgb(244, 82, 79);
+$light-font: rgb(243, 215, 212);
+
+/* Rover Theme Colors */
+$curiosityThemeColor: #a1fea1;
+$spiritThemeColor: #ffa6bc;
+$opportunityThemeColor: #ffeb6b;
 
 /* Site Fonts */
 $font-family-OpenSans:'Open Sans', sans-serif;
@@ -17,10 +25,12 @@ $header-three-font-size: 1.5em;
 $header-two-font-size: 2em;
 $header-one-font-size: 2.5em;
 
+
+
 @mixin navbar-font {
   font-family: $font-family-Ubuntu;
   font-size: $header-two-font-size;
-  color: $light-yellow-font;
+  color: $light-font;
 }
 
 @mixin html-base-font {
@@ -30,5 +40,16 @@ $header-one-font-size: 2.5em;
 
 @mixin text-on-dark-background-hover {
   text-decoration: none;
-  color: white;
+  color: $light-font;
+}
+
+@mixin hero-astronomy-image-of-the-day {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $background-color-dark;
+  justify-content: center;
+  color: $light-font;
+
 }
