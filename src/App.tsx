@@ -5,6 +5,7 @@ import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
 import {NavBar} from "./NavBar/NavBar";
+import {WeatherOnMarsPage} from "./Pages/WeatherOnMarsPage/WeatherOnMarsPage";
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
                     </Route>
                     <Route path="/opportunity">
                         <Opportunity />
+                    </Route>
+                    <Route path="/weather-on-mars">
+                        <WeatherOnMarsPage/>
                     </Route>
                 </Switch>
             </div>
