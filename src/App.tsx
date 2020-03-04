@@ -26,6 +26,10 @@ function App() {
                 </Switch>
                 <Footer/>
             </div>
+          <p> Para tag yipee </p>
+          <h1> header one</h1>
+          <h2>header two </h2>
+          <h3>header three</h3>
       </Router>
       
   );
