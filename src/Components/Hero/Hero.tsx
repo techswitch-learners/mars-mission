@@ -10,17 +10,12 @@ interface HeroProps{
 }
 
 export function Hero(props : HeroProps){
-
-    const heroClass : string = "hero " + props.rover;
     
     return(
-        
-        
-        <div className={heroClass}>
+        <div className={`hero ${props.rover}`}>
             <h1 className='heroTitle'>{props.headingText}</h1>
             <img className='heroImage' src={props.imageUrl}/>
         </div>
-        
     );
     
     
