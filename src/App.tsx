@@ -20,7 +20,6 @@ function App() {
               <header className="header" data-testid="header">
                   <NavBar />
               </header>
-                <HeroImageOfTheDay/>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/curiosity" component={Curiosity} />
