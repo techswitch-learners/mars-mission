@@ -18,6 +18,6 @@ export function DateInputForm() {
                 </label>
                 <input type="submit" name="Submit" />
             </form>
-        </div>
+        </div> 
     );
 }
