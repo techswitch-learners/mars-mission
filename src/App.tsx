@@ -18,21 +18,11 @@ function App() {
                   <NavBar />
               </header>
                 <Switch>
-                    <Route exact path="">
-                        <Home />
-                    </Route>
-                    <Route exact path="/curiosity">
-                        <Curiosity />
-                    </Route>
-                    <Route exact path="/curiosity/discover-rovers">
-                        <DiscoverRoversPage />
-                    </Route>
-                    <Route path="/spirit">
-                        <Spirit />
-                    </Route>
-                    <Route path="/opportunity">
-                        <Opportunity />
-                    </Route>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/curiosity" component={Curiosity} />
+                    <Route exact path="/curiosity/discover-rovers" component={DiscoverRoversPage} />
+                    <Route exact path="/spirit" component={Spirit} />
+                    <Route exact path="/opportunity" component={Opportunity} />
                 </Switch>
                 <Footer/>
             </div>
