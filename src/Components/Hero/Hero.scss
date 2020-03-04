@@ -1,9 +1,7 @@
-﻿$curiosityThemeColor: grey;
-$spiritThemeColor: grey;
-$opportunityThemeColor: grey;
-
+﻿@import './src/ConstantsMixins.scss';
 
 .hero {
+    
     // TODO - can be removed once WeatherOnMars branch has been merged (contains NavBar fix)
     margin-top: 100px;
     //
@@ -12,12 +10,12 @@ $opportunityThemeColor: grey;
     flex-direction: column;
     align-items: center;
 
-    h1 {
+/*    h1 {
         width: 100%;
         text-align: center;
         color: white;
         font-size: 22px;
-    }
+    }*/
 
     img {
         height: auto;
@@ -27,21 +25,15 @@ $opportunityThemeColor: grey;
 
 
 .curiosity{
-    h1 {
-        background-color: $curiosityThemeColor;
-    }
+    @include curiosityThemeColor;
 }
 
 .opportunity{
-    h1 {
-        background-color: $opportunityThemeColor;
-    }
+    @include opportunityThemeColor;
 }
 
 .spirit{
-    h1 {
-        background-color: $spiritThemeColor;
-    }
+    @include spiritThemeColor;
 }
 
 @media (min-width: 500px){

@@ -1,5 +1,0 @@
-@import './src/ConstantsMixins.scss';
-
-h1 .heroTitle {
-    @include curiosty-hero;
-}

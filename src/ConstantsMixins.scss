@@ -33,8 +33,23 @@ $header-one-font-size: 2.5em;
   color: white;
 }
 
-@mixin curiosity-hero {
-  h1 {
+@mixin curiosityThemeColor {
+  h1, h2, h3, blockquote {
+    color: $background-blue;
+    background-color: white;
+  }
+}
+
+@mixin opportunityThemeColor {
+  h1, h2, h3, blockquote {
     color: $accent-color-red;
+    background-color: white;
+  }
+}
+
+@mixin spiritThemeColor {
+  h1, h2, h3, blockquote {
+    color:$secondary-color-orange;
+    background-color: white;
   }
 }
