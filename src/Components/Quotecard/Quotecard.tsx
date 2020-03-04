@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import "./QuoteCard.scss"
+import "./Quotecard.scss"
 
 interface QuotecardProps {
     quote:string;
