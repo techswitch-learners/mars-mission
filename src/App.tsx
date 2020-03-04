@@ -30,7 +30,7 @@ function App() {
                     <Route exact path="/curiosity/date-input" component={DateInputForm} />
                     <Route exact path="/spirit" component={Spirit} />
                     <Route exact path="/opportunity" component={Opportunity} />
-                    <Route exact path="opportunity/humans" component={HumansAtNasa} />
+                    <Route exact path="/opportunity/humans" component={HumansAtNasa} />
                     <Route exact path="/curiosity/weather-on-mars" component={WeatherOnMarsPage} />
                 </Switch>
                 <Footer/>
