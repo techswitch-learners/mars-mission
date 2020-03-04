@@ -1,9 +1,12 @@
 ﻿﻿import React from "react";
+import {Hero} from "../../Components/Hero/Hero";
+
+
 
 export function Spirit() {
     return (
         <div>
-            <h2>Spirit</h2>
+            <Hero headingText={"Spirit"} rover={"spirit"} imageUrl={"https://spaceplace.nasa.gov/mars-curiosity/en/curiosity-here.en.jpg"}/>
         </div>
     );
 }
