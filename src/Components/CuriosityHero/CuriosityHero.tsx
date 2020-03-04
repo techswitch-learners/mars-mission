@@ -1,5 +1,5 @@
 ﻿﻿import React from "react";
-import 'CuriosityHero.css';
+import 'CuriosityHero.scss';
 
 export function CuriosityHero(prop: {imageUrl: string}){
     
