@@ -1,14 +1,12 @@
-﻿﻿import React from "react";
-import {CuriosityHero} from "../../Components/CuriosityHero/CuriosityHero";
+﻿import {Hero} from "../../Components/Hero/Hero";
 
+﻿import React from "react";
 
-const imageOfCuriosity = "https://spaceplace.nasa.gov/mars-curiosity/en/curiosity-here.en.jpg";
 
 export function Curiosity(): JSX.Element {
     return (
         <div>
-            <h2>Opportunity</h2>
-            <CuriosityHero imageUrl={imageOfCuriosity} />
+            <Hero headingText={"Curiosity"} rover={"curiosity"} imageUrl={"https://spaceplace.nasa.gov/mars-curiosity/en/curiosity-here.en.jpg"}/>
         </div>
     );
 }
