@@ -9,11 +9,10 @@
 
 .navBar {
   text-decoration: none;
-  font-size: $header-two-font-size;
   background-image: linear-gradient(to right, $light-font, $background-color-dark);
   display: flex;
   width: 100vw;
-  height: 10vh;
+  height: 11vh;
   top: 0;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +24,7 @@
     cursor: pointer;
     display: inline-block;
     /*float: right;*/
-    padding: 20px;
+    padding: 3*$Scale;
     position: relative;
     user-select: none;
     order: 1;
@@ -68,10 +67,12 @@
   .menuButton:checked ~ .menu {
     background-color: $background-color-dark;
     position: fixed;
-    top: 100px;
+    top: 11vh;
     right: 0;
-    width: 150px;
-    max-height: 300px;
+    width: 40*$Scale;
+    padding: 0;
+    margin: 0;
+    max-height: 30vh;
     justify-content: center;
   }
 
@@ -96,26 +97,24 @@
 
 
   .logo {
-    padding-left: 20px;
-    height: 50px;
+    padding-left: 2*$Scale;
+    height: 8vh;
   }
 
   .menu {
     max-height: 0;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     overflow: hidden;
-
-
+    
     .navItem {
-      padding: 10px;
+      padding: 0;
 
       .navLink {
-        @include navbar-font;
-        text-decoration: none;
+        @include navbar-font();
+        
       }
 
       .navLink:hover {
@@ -127,30 +126,21 @@
   //no Hamburger for tablets and larger
 
   @media (min-width: 768px) {
-
     .menu {
-      font-size: 22px;
-      padding-right: 10px;
+      padding-right: 2*$Scale;
       max-height: none;
     }
-
     .menuIcon {
       display: none;
     }
-  }
-
-  //larger font-size and logo for laptops/desktop
-
-  @media (min-width: 1024px) {
-
-    .menu {
-      font-size: 28px;
-    }
-
-    .logo {
-      height: 75px;
+    .menu {.navItem {
+      .navLink {
+        @include navbar-font($navbar-font-size-larger-screens);
+      }}
+    
     }
   }
+  
 
 }
 
