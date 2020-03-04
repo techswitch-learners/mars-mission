@@ -32,3 +32,9 @@ $header-one-font-size: 2.5em;
   text-decoration: none;
   color: white;
 }
+
+@mixin curiosity-hero {
+  h1 {
+    color: $accent-color-red;
+  }
+}
