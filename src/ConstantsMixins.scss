@@ -1,0 +1,34 @@
+﻿
+/* Site colours */
+$background-blue: rgba(36, 30, 78, 1);
+$accent-color-red: rgba(150, 2, 0, 1);
+$secondary-color-orange: rgba(206, 108, 71, 1);
+$foreground-color-yellow: rgba(244, 162, 97, 1);
+$light-yellow-font: rgba(234, 218, 162, 1);
+
+/* Site Fonts */
+$font-family-OpenSans:'Open Sans', sans-serif;
+$font-family-Ubuntu:'Ubuntu', sans-serif;
+
+$para-font-size:0.5em;
+$quote-font-size:.95em;
+$label-font-size:.90em;
+$header-three-font-size: 1.5em;
+$header-two-font-size: 2em;
+$header-one-font-size: 2.5em;
+
+@mixin navbar-font {
+  font-family: $font-family-Ubuntu;
+  font-size: $header-two-font-size;
+  color: $light-yellow-font;
+}
+
+@mixin html-base-font {
+  font-family: $font-family-OpenSans;
+  font-size: $para-font-size;
+}
+
+@mixin text-on-dark-background-hover {
+  text-decoration: none;
+  color: white;
+}
