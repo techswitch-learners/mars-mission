@@ -124,20 +124,28 @@
   }
 
   //no Hamburger for tablets and larger
-
-  @media (min-width: 768px) {
-
-    .menu {
-      font-size: 22px;
-      padding-right: 10px;
-      max-height: none;
+  
+      @media (min-width: 768px) {
+      .menuIcon {
+        display: none;
+      }
+      
+      .menuButton:checked ~ .menu {
+        background-color: transparent;
+        position: unset;
+        top: unset;
+        right: unset;
+        width: unset;
+        max-height: unset;
+        
+      }
+      .menu {
+        font-size: 22px;
+        padding-right: 10px;
+        max-height: none;
+      }
     }
-
-    .menuIcon {
-      display: none;
-    }
-  }
-
+  
   //larger font-size and logo for laptops/desktop
 
   @media (min-width: 1024px) {
