@@ -1,9 +1,12 @@
 ﻿﻿import React from "react";
+import {Hero} from "../../Components/Hero/Hero";
 
-export function Curiosity() {
+
+
+export function Curiosity(): JSX.Element {
     return (
         <div>
-            <h2>Opportunity</h2>
+            <Hero headingText={"Curiosity"} rover={"curiosity"} imageUrl={"https://spaceplace.nasa.gov/mars-curiosity/en/curiosity-here.en.jpg"}/>
         </div>
     );
 }

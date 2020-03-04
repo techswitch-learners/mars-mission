@@ -1,0 +1,26 @@
+﻿import {getImageOfTheDay} from "./ApodApiFetch";
+
+
+test('check function returns JSON data', async () => {
+    
+    const body = {
+        date: "2020-03-03",
+        explanation: "What if the only way to get back to Earth was to go around the far side of the Moon? Such was the dilemma of the Apollo 13 Crew in 1970 as they tried to return home in their unexpectedly damaged spacecraft. With the Moon in the middle, their perilous journey substituted spectacular views of the lunar farside for radio contact with NASA's Mission Control. These views have now been digitally recreated from detailed images of the Moon taken by the robotic Lunar Reconnaissance Orbiter. The featured video starts by showing Earth disappear behind a dark lunar limb, while eight minutes later the Sun rises around the opposite side of the Moon and begins to illuminate the Moon's unusual and spectacularly cratered surface.  Radio contact was only re-established several minutes after that, as a crescent Earth rose into view.  With the gravity of the Moon and the advice of many industrious NASA engineers and scientists, a few days later Apollo 13 opened its parachutes over the Pacific Ocean and landed safely back on Earth.",
+        media_type: "video",
+        service_version: "v1",
+        title: "Apollo 13 Views of the Moon",
+        url: "https://www.youtube.com/embed/Ilifg26TZrI?rel=0"
+    };
+    
+    const fakeResponse = Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve(body)
+    });
+    
+    //@ts-ignore
+    jest.spyOn(global, 'fetch').mockImplementation((url: string) => fakeResponse);
+    
+    const imageOfTheDay = await getImageOfTheDay();
+    
+    expect(imageOfTheDay.url).toBe("https://www.youtube.com/embed/Ilifg26TZrI?rel=0");
+});
