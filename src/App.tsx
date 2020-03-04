@@ -9,6 +9,8 @@ import {NavBar} from "./NavBar/NavBar";
 import {WeatherOnMarsPage} from "./Pages/WeatherOnMarsPage/WeatherOnMarsPage";
 import {Home} from "./Pages/Home/Home";
 import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
+import {HeroImageOfTheDay} from "./Components/HeroImageOfTheDay/HeroImageOfTheDay";
+
 
 function App() {
     
@@ -18,6 +20,7 @@ function App() {
               <header className="header" data-testid="header">
                   <NavBar />
               </header>
+                <HeroImageOfTheDay/>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/curiosity" component={Curiosity} />
@@ -29,6 +32,7 @@ function App() {
                 <Footer/>
             </div>
       </Router>
+      
   );
 } 
 
