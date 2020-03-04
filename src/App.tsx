@@ -9,6 +9,7 @@ import {NavBar} from "./NavBar/NavBar";
 import {WeatherOnMarsPage} from "./Pages/WeatherOnMarsPage/WeatherOnMarsPage";
 import {Home} from "./Pages/Home/Home";
 import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
+import {InspirationalQuotesPage} from "./Pages/InspirationalQuotesPage/InspirationalQuotesPage";
 
 function App() {
     
@@ -23,6 +24,7 @@ function App() {
                     <Route exact path="/curiosity" component={Curiosity} />
                     <Route exact path="/curiosity/discover-rovers" component={DiscoverRoversPage} />
                     <Route exact path="/spirit" component={Spirit} />
+                    <Route exact path="/spirit/inspirational-quotes" component={InspirationalQuotesPage} />
                     <Route exact path="/opportunity" component={Opportunity} />
                     <Route exact path="/curiosity/weather-on-mars" component={WeatherOnMarsPage} />
                 </Switch>
