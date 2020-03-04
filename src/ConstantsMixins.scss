@@ -10,7 +10,7 @@ $light-yellow-font: rgba(234, 218, 162, 1);
 $font-family-OpenSans:'Open Sans', sans-serif;
 $font-family-Ubuntu:'Ubuntu', sans-serif;
 
-$para-font-size:0.5em;
+$para-font-size:1em;
 $quote-font-size:.95em;
 $label-font-size:.90em;
 $header-three-font-size: 1.5em;
@@ -31,4 +31,25 @@ $header-one-font-size: 2.5em;
 @mixin text-on-dark-background-hover {
   text-decoration: none;
   color: white;
+}
+
+@mixin curiosityThemeColor {
+  h1, h2, h3, blockquote {
+    color: $background-blue;
+    background-color: white;
+  }
+}
+
+@mixin opportunityThemeColor {
+  h1, h2, h3, blockquote {
+    color: $accent-color-red;
+    background-color: white;
+  }
+}
+
+@mixin spiritThemeColor {
+  h1, h2, h3, blockquote {
+    color:$secondary-color-orange;
+    background-color: white;
+  }
 }

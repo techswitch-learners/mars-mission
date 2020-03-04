@@ -7,7 +7,6 @@
 
 .navBar {
   text-decoration: none;
-  font-size: $header-two-font-size;
   background-image: linear-gradient(to right, $light-yellow-font, $background-blue);
   position: fixed;
   display: flex;
@@ -58,7 +57,6 @@
       top: -5px;
     }
   }
-
 
   .menuButton {
     display: none;
@@ -142,11 +140,7 @@
   
   //larger font-size and logo for laptops/desktop
 
-  @media (min-width: 1024px) {
-
-    .menu {
-      font-size: 28px;
-    }
+  @media (min-width: 1000px) {
 
     .logo {
       height: 75px;

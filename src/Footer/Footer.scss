@@ -1,8 +1,11 @@
-﻿.footer {
+﻿@import './src/ConstantsMixins.scss';
+
+.footer {
     position: fixed;
     bottom: 0;
     padding: 5px;
-    background-color: bisque;
     width: 100%;
     text-align: center;
+    background-color: $background-blue;
+    color: $light-yellow-font;
 }
