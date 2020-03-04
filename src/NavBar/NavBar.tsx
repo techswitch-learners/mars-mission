@@ -5,6 +5,7 @@ import './NavBar.scss';
 function NavBar() {
 
     return (
+      <div>
         <nav className="navBar">
             <input className="menuButton" type="checkbox" id="menuButton"/>
             <label className="menuIcon" htmlFor="menuButton">
@@ -23,7 +24,8 @@ function NavBar() {
                 </li>
             </ul>
         </nav>
+        <div className="spacer"></div>
+    </div>
     );
 }
-
 export {NavBar};
