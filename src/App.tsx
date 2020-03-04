@@ -19,15 +19,12 @@ function App() {
                   <NavBar />
               </header>
                 <Switch>
-
-                    
-
                     <Route exact path="/" component={Home} />
                     <Route exact path="/curiosity" component={Curiosity} />
                     <Route exact path="/curiosity/discover-rovers" component={DiscoverRoversPage} />
                     <Route exact path="/spirit" component={Spirit} />
                     <Route exact path="/opportunity" component={Opportunity} />
-
+                    <Route exact path="/curiosity/weather-on-mars" component={WeatherOnMarsPage} />
                 </Switch>
                 <Footer/>
             </div>
