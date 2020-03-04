@@ -131,13 +131,7 @@
       }
       
       .menuButton:checked ~ .menu {
-        background-color: transparent;
-        position: unset;
-        top: unset;
-        right: unset;
-        width: unset;
-        max-height: unset;
-        
+        display: none;
       }
       .menu {
         font-size: 22px;
