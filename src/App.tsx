@@ -6,6 +6,7 @@ import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
 import {NavBar} from "./NavBar/NavBar";
+import {WeatherOnMarsPage} from "./Pages/WeatherOnMarsPage/WeatherOnMarsPage";
 import {Home} from "./Pages/Home/Home";
 import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
 
@@ -23,10 +24,12 @@ function App() {
                     <Route exact path="/curiosity/discover-rovers" component={DiscoverRoversPage} />
                     <Route exact path="/spirit" component={Spirit} />
                     <Route exact path="/opportunity" component={Opportunity} />
+                    <Route exact path="/curiosity/weather-on-mars" component={WeatherOnMarsPage} />
                 </Switch>
                 <Footer/>
             </div>
       </Router>
+      
   );
 } 
 
