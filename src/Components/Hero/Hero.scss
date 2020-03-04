@@ -1,12 +1,65 @@
-﻿.curiosity{
+﻿$curiosityThemeColor: grey;
+$spiritThemeColor: grey;
+$opportunityThemeColor: grey;
 
+
+.hero {
+    //temp
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+    }
+
+    img {
+        height: auto;
+        width: 75vw;
+    }
+}
+
+
+.curiosity{
+    h1 {
+        background-color: $curiosityThemeColor;
+    }
 }
 
 .opportunity{
-
-
+    h1 {
+        background-color: $opportunityThemeColor;
+    }
 }
 
 .spirit{
+    h1 {
+        background-color: $spiritThemeColor;
+    }
+}
 
+@media (min-width: 500px){
+    .hero h1{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px){
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero img {
+         width: 600px;
+     }
+}
+
+@media (min-width: 1024px){
+    .hero h1{
+        font-size: 55px;
+    }
 }

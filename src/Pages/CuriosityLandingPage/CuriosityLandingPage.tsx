@@ -1,6 +1,6 @@
-﻿import {Hero} from "../../Components/Hero/Hero";
+﻿﻿import React from "react";
+import {Hero} from "../../Components/Hero/Hero";
 
-﻿import React from "react";
 
 
 export function Curiosity(): JSX.Element {
