@@ -6,7 +6,7 @@ import {Hero} from "../../Components/Hero/Hero";
 export function Spirit() {
     return (
         <div>
-            <Hero headingText={"Spirit"} rover={"spirit"} imageUrl={"https://spaceplace.nasa.gov/mars-curiosity/en/curiosity-here.en.jpg"}/>
+            <Hero headingText={"Spirit"} rover={"spirit"} imageUrl={"https://img.itch.zone/aW1hZ2UvMTk2MTE0LzkxNjY1My5wbmc=/original/hIpl%2Bw.png"}/>
         </div>
     );
 }
