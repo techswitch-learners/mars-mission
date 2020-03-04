@@ -1,7 +1,6 @@
+@import './src/ConstantsMixins.scss';
 
-﻿@import './src/ConstantsMixins.scss';
-
-﻿.spacer{
+.spacer{
   height: 100px;
   width: 100%;
 }
@@ -70,7 +69,7 @@
     position: fixed;
     top: 100px;
     right: 0;
-    width: 150px;
+    width: 200px;
     max-height: 300px;
     justify-content: center;
   }
@@ -125,20 +124,22 @@
   }
 
   //no Hamburger for tablets and larger
-
-  @media (min-width: 768px) {
-
-    .menu {
-      font-size: 22px;
-      padding-right: 10px;
-      max-height: none;
+  
+      @media (min-width: 768px) {
+      .menuIcon {
+        display: none;
+      }
+      
+      .menuButton:checked ~ .menu {
+        display: none;
+      }
+      .menu {
+        font-size: 22px;
+        padding-right: 10px;
+        max-height: none;
+      }
     }
-
-    .menuIcon {
-      display: none;
-    }
-  }
-
+  
   //larger font-size and logo for laptops/desktop
 
   @media (min-width: 1024px) {
