@@ -1,5 +1,4 @@
-
-﻿@import './src/ConstantsMixins.scss';
+﻿﻿@import './src/ConstantsMixins.scss';
 
 ﻿.spacer{
   height: 100px;
@@ -70,7 +69,7 @@
     position: fixed;
     top: 100px;
     right: 0;
-    width: 150px;
+    width: 200px;
     max-height: 300px;
     justify-content: center;
   }
