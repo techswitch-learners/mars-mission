@@ -1,3 +1,41 @@
-﻿.weatherImage{
-  border: solid 2px green;
+﻿.iframeContainer {
+  position: relative; 
+  overflow: hidden;
+  padding-top: 600px;
+  height: 100%;
+  width: 100%;
+  
+
+  iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+
+@media(min-width: 360px){
+
+  .iframeContainer{
+    padding-top: 700px;
+  }
+
+}
+
+@media(min-width: 500px){
+  
+  .iframeContainer{
+    padding-top: 700px;
+  }
+  
+}
+
+
+@media(min-width: 768px){
+  .iframeContainer{
+    padding-top: 1000px;
+  }
 }

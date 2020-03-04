@@ -5,15 +5,14 @@ function WeatherOnMarsImage() {
 
 
     return (
+        <div className='iframeContainer'>
             <iframe
-                className="weatherImage"
                 src='https://mars.nasa.gov/layout/embed/image/insightweather/'
-                width='750'
-                height='530'
-                scrolling='no'
-                frameBorder='0'
+                height ='530'
+                width = '750'
             />
+        </div>
+            
     );
 }
-
 export {WeatherOnMarsImage};
