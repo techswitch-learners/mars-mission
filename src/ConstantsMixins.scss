@@ -6,11 +6,17 @@
 $scale: 1vw;
 
 /* Site colours */
-$theme-color-dark: #241E4E;
-$theme-color-light: #F4A261;
-$curiosity-theme-color: #960200;
-$spirit-theme-color: #CE6C47;
-$opportunity-theme-color: #EADAA2;
+//$theme-color-dark: #241E4E;
+//$theme-color-light: #F4A261;
+//$curiosity-theme-color: #960200;
+//$spirit-theme-color: #CE6C47;
+//$opportunity-theme-color: #EADAA2;
+
+$curiosity-theme-color:	 rgba(136, 73, 143, 1);
+$theme-color-dark:	  rgba(86, 65, 84, 1);
+$opportunity-theme-color:	 rgba(224, 203, 168, 1);
+$spirit-theme-color:	 rgba(255, 101, 66, 1);
+$theme-color-light:	 rgba(119, 159, 161, 1);
 
 /* Site Fonts */
 $font-family-OpenSans:'Open Sans', sans-serif;

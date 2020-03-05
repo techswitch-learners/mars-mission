@@ -15,11 +15,11 @@ export function HeroImageOfTheDay() {
     }
     
     return (
-        <div className="imageOfTheDay">
+        <section className="imageOfTheDay">
             <MediaViewer  imageOfTheDay={imageOfTheDay}/>
             <h3 className="contentTitle">{imageOfTheDay.title}</h3>
             <p className="contentDescription">{imageOfTheDay.explanation}</p>
-        </div>
+        </section>
     )
 }
 
