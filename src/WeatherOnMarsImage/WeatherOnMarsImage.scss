@@ -1,4 +1,6 @@
-﻿.iframeContainer {
+﻿@import "./src/ConstantsMixins";
+
+.iframeContainer {
   position: relative; 
   overflow: hidden;
   padding-top: 600px;

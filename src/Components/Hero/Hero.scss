@@ -1,6 +1,5 @@
-﻿$curiosityThemeColor: grey;
-$spiritThemeColor: grey;
-$opportunityThemeColor: grey;
+﻿@import "./src/ConstantsMixins";
+
 
 
 .hero {
@@ -13,7 +12,7 @@ $opportunityThemeColor: grey;
     align-items: center;
 
     h1 {
-        width: 100%;
+        width: 100vw;
         text-align: center;
         color: white;
         font-size: 22px;
@@ -28,19 +27,19 @@ $opportunityThemeColor: grey;
 
 .curiosity{
     h1 {
-        background-color: $curiosityThemeColor;
+        background-color: $curiosity-theme-color;
     }
 }
 
 .opportunity{
     h1 {
-        background-color: $opportunityThemeColor;
+        background-color: $opportunity-theme-color;
     }
 }
 
 .spirit{
     h1 {
-        background-color: $spiritThemeColor;
+        background-color: $spirit-theme-color;
     }
 }
 
@@ -55,8 +54,8 @@ $opportunityThemeColor: grey;
         font-size: 40px;
     }
     .hero img {
-         width: 600px;
-     }
+        width: 600px;
+    }
 }
 
 @media (min-width: 1024px){

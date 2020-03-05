@@ -1,0 +1,146 @@
+﻿﻿@import './src/ConstantsMixins.scss';
+
+.navBar {
+  text-decoration: none;
+  background-image: linear-gradient(to right, $light-font, $background-color-dark);
+  display: flex;
+  width: 100vw;
+  height: 11vh;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+
+
+  /*Hamburger code here:*/
+
+  .menuIcon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 3*$scale;
+    position: relative;
+    user-select: none;
+    order: 1;
+    justify-self: flex-end;
+
+    .navIcon {
+      background: $background-color-light;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+
+    .navIcon:before,
+    .navIcon:after {
+      background: $background-color-light;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+
+    .navIcon:before {
+      top: 5px;
+    }
+
+    .navIcon:after {
+      top: -5px;
+    }
+  }
+
+
+  .menuButton {
+    display: none;
+  }
+
+  .menuButton:checked ~ .menu {
+    background-color: $background-color-dark;
+    position: fixed;
+    top: 11vh;
+    right: 0;
+    width: 40*$scale;
+    padding: 0;
+    margin: 0;
+    max-height: 30vh;
+    justify-content: center;
+  }
+
+  .menuButton:checked ~ .menuIcon .navIcon {
+    background: transparent;
+  }
+
+  .menuButton:checked ~ .menuIcon .navIcon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menuButton:checked ~ .menuIcon .navIcon:after {
+    transform: rotate(45deg);
+  }
+
+  .menuButton:checked ~ .menuIcon:not(.steps) .navIcon:before,
+  .menuButton:checked ~ .menuIcon:not(.steps) .navIcon:after {
+    top: 0;
+  }
+
+  /* Hamburger code ends*/
+
+
+  .logo {
+    padding-left: 2*$scale;
+    height: 10vh;
+  }
+
+  .menu {
+    max-height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    .navItem {
+      padding: 0;
+
+      .navLink {
+        @include navbar-font();
+        
+      }
+
+      .navLink:hover {
+        @include text-on-dark-background-hover;
+      }
+    }
+  }
+
+  //no Hamburger for tablets and larger
+
+  @media (min-width: 768px) {
+    .menu {
+      padding-right: 2*$scale;
+      max-height: none;
+    }
+    .menuIcon {
+      display: none;
+    }
+    .menu {.navItem {
+      .navLink {
+        @include navbar-font($navbar-font-size-larger-screens);
+      }}
+    
+    }
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+

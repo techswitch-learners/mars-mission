@@ -1,10 +1,22 @@
-﻿
+﻿//Please read README section on Styling before editing or creating SCSS
+// This is your home for all shared themes and styles, please import it
+
+
+//Size Reference
+$scale: 1vw;
+
 /* Site colours */
-$background-blue: rgba(36, 30, 78, 1);
-$accent-color-red: rgba(150, 2, 0, 1);
-$secondary-color-orange: rgba(206, 108, 71, 1);
-$foreground-color-yellow: rgba(244, 162, 97, 1);
-$light-yellow-font: rgba(234, 218, 162, 1);
+$background-color-dark: rgb(23, 3, 29);
+$background-color-light: rgb(182, 188, 244);
+$accent-color: rgb(121, 78, 255);
+$secondary-color-mid-tone: rgb(255, 14, 54);
+$foreground-color-light: rgb(244, 82, 79);
+$light-font: rgb(243, 215, 212);
+
+/* Rover Theme Colors */
+$curiosity-theme-color: rgb(161, 254, 161);
+$spirit-theme-color: rgb(255, 166, 188);
+$opportunity-theme-color: rgb(255, 235, 107);
 
 /* Site Fonts */
 $font-family-OpenSans:'Open Sans', sans-serif;
@@ -13,14 +25,18 @@ $font-family-Ubuntu:'Ubuntu', sans-serif;
 $para-font-size:0.5em;
 $quote-font-size:.95em;
 $label-font-size:.90em;
+$navbar-font-size: 6*$scale;
+$navbar-font-size-larger-screens: 4*$scale;
 $header-three-font-size: 1.5em;
 $header-two-font-size: 2em;
 $header-one-font-size: 2.5em;
 
-@mixin navbar-font {
+
+@mixin navbar-font($font-size: $navbar-font-size) {
   font-family: $font-family-Ubuntu;
-  font-size: $header-two-font-size;
-  color: $light-yellow-font;
+  font-size: $font-size;
+  color: $light-font;
+  padding-right: 4*$scale;
 }
 
 @mixin html-base-font {
@@ -30,5 +46,5 @@ $header-one-font-size: 2.5em;
 
 @mixin text-on-dark-background-hover {
   text-decoration: none;
-  color: white;
+  color: $light-font;
 }

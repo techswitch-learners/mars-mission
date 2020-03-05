@@ -2,7 +2,6 @@
 import {Url} from "../../Models/Url";
 import './Hero.scss';
 
-
 interface HeroProps{
     headingText : 'Curiosity' | 'Spirit'  | 'Opportunity';
     rover : 'curiosity' | 'spirit'  | 'opportunity';
