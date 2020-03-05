@@ -1,17 +1,2 @@
-//Please read README section on Styling before editing or creating SCSS
-//ToDo: move to App.scss
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 300px;
-  label{
-    input{
-      width: 60vw;
-    }
-  }
-  input {
-    margin: .5rem;
-    height: 30px;
-  }
-}
+@import "./src/App";
+@import "./src/ConstantsMixins";
