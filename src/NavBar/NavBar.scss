@@ -22,7 +22,7 @@
     cursor: pointer;
     display: inline-block;
     /*float: right;*/
-    padding: 3*$Scale;
+    padding: 3*$scale;
     position: relative;
     user-select: none;
     order: 1;
@@ -67,7 +67,7 @@
     position: fixed;
     top: 11vh;
     right: 0;
-    width: 40*$Scale;
+    width: 40*$scale;
     padding: 0;
     margin: 0;
     max-height: 30vh;
@@ -95,7 +95,7 @@
 
 
   .logo {
-    padding-left: 2*$Scale;
+    padding-left: 2*$scale;
     height: 10vh;
   }
 
@@ -125,7 +125,7 @@
 
   @media (min-width: 768px) {
     .menu {
-      padding-right: 2*$Scale;
+      padding-right: 2*$scale;
       max-height: none;
     }
     .menuIcon {

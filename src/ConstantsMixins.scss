@@ -3,7 +3,7 @@
 
 
 //Size Reference
-$Scale: 1vw;
+$scale: 1vw;
 
 /* Site colours */
 $background-color-dark: rgb(23, 3, 29);
@@ -14,9 +14,9 @@ $foreground-color-light: rgb(244, 82, 79);
 $light-font: rgb(243, 215, 212);
 
 /* Rover Theme Colors */
-$curiosityThemeColor: #a1fea1;
-$spiritThemeColor: #ffa6bc;
-$opportunityThemeColor: #ffeb6b;
+$curiosity-theme-color: rgb(161, 254, 161);
+$spirit-theme-color: rgb(255, 166, 188);
+$opportunity-theme-color: rgb(255, 235, 107);
 
 /* Site Fonts */
 $font-family-OpenSans:'Open Sans', sans-serif;
@@ -25,8 +25,8 @@ $font-family-Ubuntu:'Ubuntu', sans-serif;
 $para-font-size:0.5em;
 $quote-font-size:.95em;
 $label-font-size:.90em;
-$navbar-font-size: 6*$Scale;
-$navbar-font-size-larger-screens: 4*$Scale;
+$navbar-font-size: 6*$scale;
+$navbar-font-size-larger-screens: 4*$scale;
 $header-three-font-size: 1.5em;
 $header-two-font-size: 2em;
 $header-one-font-size: 2.5em;
@@ -37,7 +37,7 @@ $header-one-font-size: 2.5em;
   font-family: $font-family-Ubuntu;
   font-size: $font-size;
   color: $light-font;
-  padding-right: 4*$Scale;
+  padding-right: 4*$scale;
 }
 
 @mixin html-base-font {
@@ -48,15 +48,4 @@ $header-one-font-size: 2.5em;
 @mixin text-on-dark-background-hover {
   text-decoration: none;
   color: $light-font;
-}
-
-@mixin hero-astronomy-image-of-the-day {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: $background-color-dark;
-  justify-content: center;
-  color: $light-font;
-
 }

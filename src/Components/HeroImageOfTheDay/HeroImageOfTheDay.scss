@@ -1,5 +1,11 @@
 ﻿@import "./src/ConstantsMixins";
 
 .imageOfTheDay {
-  @include hero-astronomy-image-of-the-day();
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $background-color-dark;
+  justify-content: center;
+  color: $light-font;
 }
