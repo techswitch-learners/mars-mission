@@ -1,9 +1,5 @@
-
 * Mars Mission *
 
-Accessing API Key:
- You can access the NASA api key with: process.env.REACT_APP_NASA_API_KEY
-=======
 # Mars Mission
 
 An educational website for inspiring interest in Mars.
@@ -29,3 +25,8 @@ To set this up:
 4. Make sure ".env" tis listed in your .gitignore file.
 5. Access your API key using `process.env.REACT_APP_NASA_API_KEY`
 
+### Styling
+- Please import and use only colors listed under "Site Colors" in the ConstantsMixins.scss file.
+- The same goes for font styles and sizes.
+- This should allow us to easily update the general appearance and color scheme of the app from within ConstantsMixins.scss.
+- Please only style global elements (e.g. div, img, body etc) from within the App.scss file to prevent conflicts.

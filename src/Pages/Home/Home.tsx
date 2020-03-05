@@ -1,9 +1,13 @@
-﻿﻿import React from "react";
+﻿import {HeroImageOfTheDay} from "../../Components/HeroImageOfTheDay/HeroImageOfTheDay";
+
+﻿import React from "react";
 import "./Home.scss";
 import {RoverNavItem} from "./RoverNavItem";
 
 export function Home(): JSX.Element {
     return (
+        <div>
+        <HeroImageOfTheDay/>
         <ul className="roverNav">
             <RoverNavItem imageUrl={"https://robohash.org/CuriosityRover?bgset=bg1"}
                           align={"rightAlign"}
@@ -21,5 +25,6 @@ export function Home(): JSX.Element {
                           description={"Spirit"}
                           destination={"/spirit"}/>
         </ul>
+    </div>
     )
 }
