@@ -1,5 +1,11 @@
 @import './ConstantsMixins.scss';
 
+.roverNav{
+  margin-top : 100px;
+  margin-bottom: 35px;
+  
+}
+
 /* font styles */
 html {
   @include html-base-font;
