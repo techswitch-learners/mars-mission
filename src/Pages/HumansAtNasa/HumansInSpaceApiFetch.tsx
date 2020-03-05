@@ -12,7 +12,7 @@ export async function getHumansInSpace(): Promise<HumansInSpace>  {
     const apiResponse = await fetch(apiUrl);
     return await apiResponse.json();
 }
-
+export let astronautList: any = [];
 export function SetHumansInSpace() {
     const [humansInSpace, setHumansInSpace] = useState<HumansInSpace | null>(null);
 
@@ -24,10 +24,6 @@ export function SetHumansInSpace() {
         return (<div>Loading</div>)
     }
     const humansInSpaceList = humansInSpace.people;
-    let astronautList: any = [];
     
     humansInSpaceList.map(human=> astronautList.push(human.name, human.craft));
-    return (
-        <div>{astronautList}</div>
-    )
 }
