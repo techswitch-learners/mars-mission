@@ -12,6 +12,7 @@ import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage"
 import {InspirationalQuotesPage} from "./Pages/InspirationalQuotesPage/InspirationalQuotesPage";
 import {HeroImageOfTheDay} from "./Components/HeroImageOfTheDay/HeroImageOfTheDay";
 import {DateInputForm} from "./Components/DateInputForm/DateInputForm";
+import {HumansAtNasa} from "./Pages/HumansAtNasa/HumansAtNasa";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <Route exact path="/spirit" component={Spirit}/>
                 <Route exact path="/spirit/inspirational-quotes" component={InspirationalQuotesPage}/>
                 <Route exact path="/opportunity" component={Opportunity}/>
+                <Route exact path="/opportunity/humans" component={HumansAtNasa} />
                 <Route exact path="/curiosity/weather-on-mars" component={WeatherOnMarsPage}/>
             </Switch>
             <Footer/>
