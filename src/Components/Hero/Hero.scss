@@ -1,7 +1,8 @@
-﻿@import './src/ConstantsMixins.scss';
+﻿@import "./src/ConstantsMixins";
+
+
 
 .hero {
-    
     // TODO - can be removed once WeatherOnMars branch has been merged (contains NavBar fix)
     margin-top: 100px;
     //
@@ -9,7 +10,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
+    h1 {
+        width: 100vw;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+    }
+
     img {
         height: auto;
         width: 75vw;
@@ -18,15 +26,21 @@
 
 
 .curiosity{
-    @include curiosityThemeColor;
+    h1 {
+        background-color: $curiosity-theme-color;
+    }
 }
 
 .opportunity{
-    @include opportunityThemeColor;
+    h1 {
+        background-color: $opportunity-theme-color;
+    }
 }
 
 .spirit{
-    @include spiritThemeColor;
+    h1 {
+        background-color: $spirit-theme-color;
+    }
 }
 
 @media (min-width: 500px){
@@ -40,8 +54,8 @@
         font-size: 40px;
     }
     .hero img {
-         width: 600px;
-     }
+        width: 600px;
+    }
 }
 
 @media (min-width: 1024px){
