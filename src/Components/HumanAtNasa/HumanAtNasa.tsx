@@ -14,7 +14,7 @@ export function HumanAtNasa(props : HumanAtNasaProps){
         <div className='humansComponent'>
             <img className='humansImage' src={props.imageUrl}/>
             <h2 className='humanNames'>{props.name}</h2>
-            <h3 className='jobTitle'>{props.jobTitle}</h3>
+            <p className='jobTitle'>{props.jobTitle}</p>
             <p className='jobDescription'>{props.jobDescription}</p>
         </div>
     );
