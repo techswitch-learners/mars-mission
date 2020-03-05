@@ -5,6 +5,15 @@
 //Size Reference
 $scale: 1vw;
 
+//Site Borders
+
+@mixin borders {
+  border-style: solid;
+  border-width: .2*$scale;
+  border-color: $accent-color;
+  border-radius: .2*$scale;
+}
+
 /* Site colours */
 $background-color-dark: rgb(23, 3, 29);
 $background-color-light: rgb(182, 188, 244);
