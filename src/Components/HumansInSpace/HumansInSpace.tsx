@@ -16,8 +16,8 @@ export function HumansInSpace() {
     }
 
     return (
-        <div>
-            There are currently {humansInSpace.number} astronauts in space!
+        <div className='numberOfHumansInSpace'>
+            There are currently {humansInSpace.number} astronauts 👨‍🚀 in space!
             {humansInSpace.people.map(human => <DisplayAstronauts astronaut={human} />)}
         </div>
     );
@@ -31,7 +31,7 @@ export function DisplayAstronauts(props: AstronautProps) {
     return (
         <div>
             <article data-testid="astronautsInSpaceNow" className="astronautsInSpaceNow">
-                Astronaut: {props.astronaut.name} SpaceCraft: {props.astronaut.craft}
+                 {props.astronaut.name} on SpaceCraft: {props.astronaut.craft}
             </article>
         </div>
     );
