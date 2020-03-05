@@ -17,17 +17,3 @@ export async function getHumansInSpace(): Promise<AstronautsInSpace>  {
     const apiResponse = await fetch(apiUrl);
     return await apiResponse.json();
 }
-
-// export function SetHumansInSpace() {
-//     const [humansInSpace, setHumansInSpace] = useState<HumansInSpace | null>(null);
-//
-//     useEffect(() => {
-//         getHumansInSpace()
-//             .then(astronauts => setHumansInSpace(astronauts));
-//     }, []);
-//     if (!humansInSpace) {
-//         return (<div>Loading</div>)
-//     }
-//    
-//     humansInSpace.people.map(human=> astronautList.push(human));
-// }

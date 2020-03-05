@@ -11,12 +11,12 @@ interface HumanAtNasaProps{
 export function HumanAtNasa(props : HumanAtNasaProps){
     
     return(
-        <div className='humansComponent'>
-            <img className='humansImage' src={props.imageUrl}/>
+        <section className='humansComponent'>
+            <img className='humansImage' src={props.imageUrl} alt={props.name}/>
             <h2 className='humanNames'>{props.name}</h2>
             <h3 className='jobTitle'>{props.jobTitle}</h3>
             <p className='jobDescription'>{props.jobDescription}</p>
-        </div>
+        </section>
     );
     
 }
