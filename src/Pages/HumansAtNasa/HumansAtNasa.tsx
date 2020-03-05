@@ -6,7 +6,11 @@ export function HumansAtNasa() {
     return (
         <div>
             <NavBar/>
-            <HumanAtNasa name={"Dr. Steve Squyres"} jobTitle={"principal investigator"} imageUrl={"https://mars.nasa.gov/system/resources/detail_files/7981_20040103_Sp_EDL_02-full2.jpg"}/>
+            <h1>Humans At Nasa</h1>
+            <p>General text about what people at Nasa do and about the team that launched Mars rovers.</p>
+            <HumanAtNasa name={"Laura Kerber"} jobTitle={"Research Scientist"} jobDescription={"Laura Kerber is a research scientist at JPL with interests in physical volcanology, aeolian geomorphology, wind over complex surfaces, the ancient Martian climate."} imageUrl={"https://science.jpl.nasa.gov/images/people-3979.jpg"}/>
+            <HumanAtNasa name={"Nathan Williams"} jobTitle={"Planetary Geologist"} jobDescription={"Nathan Williams is a planetary geologist with particular interest in the remote sensing of planetary surfaces, especially relating to structural geology, geodesy, and landform evolution."} imageUrl={"https://science.jpl.nasa.gov/images/people-4770.jpg"}/>
+            <HumanAtNasa name={"Dr. Timothy Parker"} jobTitle={"Geology Team Group Lead"} jobDescription={"Dr. Tim Parker was the originator of the Mars Ocean hypothesis. He earned his Ph.D. at the University of Southern California in 1994, with a dissertation entitled \"Martian Paleolakes and Oceans.\""} imageUrl={"https://science.jpl.nasa.gov/images/people-135.jpg"}/>
         </div>
             
     );
