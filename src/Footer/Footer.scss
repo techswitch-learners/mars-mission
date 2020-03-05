@@ -1,8 +1,9 @@
-﻿.footer {
+﻿@import "./src/ConstantsMixins";
+.footer {
     position: fixed;
     bottom: 0;
     padding: 5px;
-    background-color: bisque;
+    background-color: $background-color-light;
     width: 100%;
     text-align: center;
 }
