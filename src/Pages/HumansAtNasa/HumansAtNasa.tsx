@@ -6,7 +6,6 @@ import './HumansAtNasa.scss';
 export function HumansAtNasa() {
     return (
         <div className='humansAtNasaBody'>
-            <NavBar/>
             <h1>Humans At Nasa</h1>
             <p>NASA's Mars missions are designed, built and operated by some of the best and brightest. Meet some of the amazing people who do their best work on another planet.</p>
             <HumanAtNasa name={"Laura Kerber"} jobTitle={"Research Scientist"} jobDescription={"Laura Kerber is a research scientist at JPL with interests in physical volcanology, aeolian geomorphology, wind over complex surfaces, the ancient Martian climate."} imageUrl={"https://science.jpl.nasa.gov/images/people-3979.jpg"}/>
