@@ -1,10 +1,5 @@
 @import './src/ConstantsMixins.scss';
 
-.spacer{
-  height: 100px;
-  width: 100%;
-}
-
 .navBar {
   text-decoration: none;
   background-image: linear-gradient(to right, $light-yellow-font, $background-blue);
@@ -118,6 +113,7 @@
       .navLink:hover {
         @include text-on-dark-background-hover;
       }
+      
     }
   }
 
@@ -132,7 +128,6 @@
         display: none;
       }
       .menu {
-        font-size: 22px;
         padding-right: 10px;
         max-height: none;
       }
