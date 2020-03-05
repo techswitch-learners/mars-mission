@@ -1,5 +1,6 @@
 ﻿﻿import React from "react";
 import {Hero} from "../../Components/Hero/Hero";
+import './OpportunityLandingPage.scss';
 
 
 export function Opportunity() {
