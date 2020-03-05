@@ -1,5 +1,11 @@
 @import './src/ConstantsMixins.scss';
 
+.spacer{
+  height:100px;
+  width:100%;
+}
+
+
 .navBar {
   text-decoration: none;
   background-image: linear-gradient(to right, $light-yellow-font, $background-blue);
