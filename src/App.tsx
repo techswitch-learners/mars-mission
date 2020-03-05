@@ -9,6 +9,8 @@ import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
 import {WeatherOnMarsPage} from "./Pages/WeatherOnMarsPage/WeatherOnMarsPage";
 import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
+import {InspirationalQuotesPage} from "./Pages/InspirationalQuotesPage/InspirationalQuotesPage";
+import {HeroImageOfTheDay} from "./Components/HeroImageOfTheDay/HeroImageOfTheDay";
 import {DateInputForm} from "./Components/DateInputForm/DateInputForm";
 
 
@@ -23,6 +25,7 @@ function App() {
                 <Route exact path="/curiosity/discover-rovers" component={DiscoverRoversPage}/>
                 <Route exact path="/curiosity/date-input" component={DateInputForm}/>
                 <Route exact path="/spirit" component={Spirit}/>
+                <Route exact path="/spirit/inspirational-quotes" component={InspirationalQuotesPage}/>
                 <Route exact path="/opportunity" component={Opportunity}/>
                 <Route exact path="/curiosity/weather-on-mars" component={WeatherOnMarsPage}/>
             </Switch>
