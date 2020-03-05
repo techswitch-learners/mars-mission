@@ -14,28 +14,26 @@ import {DateInputForm} from "./Components/DateInputForm/DateInputForm";
 
 
 function App() {
-    
-  return (
-      <Router>
-            <div>
-              <header className="header" data-testid="header">
-                  <NavBar />
-              </header>
-                <HeroImageOfTheDay/>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/curiosity" component={Curiosity} />
-                    <Route exact path="/curiosity/discover-rovers" component={DiscoverRoversPage} />
-                    <Route exact path="/curiosity/date-input" component={DateInputForm} />
-                    <Route exact path="/spirit" component={Spirit} />
-                    <Route exact path="/opportunity" component={Opportunity} />
-                    <Route exact path="/curiosity/weather-on-mars" component={WeatherOnMarsPage} />
-                </Switch>
-                <Footer/>
-            </div>
-      </Router>
-      
-  );
-} 
+
+    return (
+        <Router>
+            <header className="header" data-testid="header">
+                <NavBar/>
+            </header>
+            <HeroImageOfTheDay/>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/curiosity" component={Curiosity}/>
+                <Route exact path="/curiosity/discover-rovers" component={DiscoverRoversPage}/>
+                <Route exact path="/curiosity/date-input" component={DateInputForm}/>
+                <Route exact path="/spirit" component={Spirit}/>
+                <Route exact path="/opportunity" component={Opportunity}/>
+                <Route exact path="/curiosity/weather-on-mars" component={WeatherOnMarsPage}/>
+            </Switch>
+            <Footer/>
+        </Router>
+
+    );
+}
 
 export default App;
