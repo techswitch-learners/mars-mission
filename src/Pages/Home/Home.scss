@@ -1,33 +1,81 @@
-﻿@import "./src/ConstantsMixins";
-
+﻿@import "../../ConstantsMixins";
 .roverNav{
   margin-top: 100px;
   padding-left: 0;
-  border: solid 2px $background-color-dark;
+  
   .roverNavItem{
-    border: solid 2px $accent-color;
     display: flex;
     align-items: center;
     height : 30vh;
-    .roverNavImage{
-      height : 90%;
-      border-radius: 50%;
-      padding : 0 5px
-    }
+    
     .roverNavLink{
+      font-size: 4rem;
+      letter-spacing: 1rem;
       padding: 10px 7vw;
       height : 30px;
+      transition: all .8s ease-in-out;
+      transition-delay: .2s;
+      
     }
   }
-  .rightAlign{
-    flex-direction : row;
+  
+
+  
+  @mixin alignment($background-color, $foreground-color) {
+    background-color: $background-color;
+    text-decoration: none;
+    color: $foreground-color;
     flex-wrap: wrap;
     justify-content : flex-start;
+   
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     
+
+    :hover {
+      @include text-on-dark-background-hover;
+      font-size: 2em;
+    }
   }
+  
+  @mixin nav-image($border-color){
+    width: 150px;
+    height: 75%;
+    border-radius: 50%;
+    margin-top: 6px;
+    border: solid 5px $border-color;
+    
+    @media (min-width: 350px) {
+      width: 200px;
+      height: 68%;
+    }
+  }
+  
+  .rightAlign{
+    @include alignment($background-color-dark, $light-font);
+    background-color: $image-background-color;
+    flex-direction: column;
+    
+    .roverNavImage{
+      @include nav-image($background-color-light);
+    }
+    @media (min-width: 350px)  {
+      flex-direction : row;
+      padding-left: 100px;
+    }
+  }
+  
   .leftAlign{
-    flex-direction : row-reverse;
-    flex-wrap: wrap-reverse;
-    justify-content : flex-start;
+    @include alignment($background-color-light, $background-color-dark);
+    flex-direction : column;
+    .roverNavImage{
+      @include nav-image($image-background-color);
+    }
+
+    @media (min-width: 350px)  {
+      flex-direction : row-reverse;
+      padding-right: 100px;
+    }
   }
 }

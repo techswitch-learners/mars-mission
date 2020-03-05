@@ -7,11 +7,12 @@ interface PhotocardProps {
     altText: string;
     imageTitle: string;
     description: string;
+    testid: string;
 }
 
 function Photocard(props: PhotocardProps) {
     return (
-        <div className="photocard">
+        <div className="photocard" data-testid={props.testid}>
             <img className="contentImage"
                  src={props.imageUrl}
                  alt={props.altText}/>
