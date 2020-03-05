@@ -6,17 +6,12 @@
 $scale: 1vw;
 
 /* Site colours */
-//$theme-color-dark: #241E4E;
-//$theme-color-light: #F4A261;
-//$curiosity-theme-color: #960200;
-//$spirit-theme-color: #CE6C47;
-//$opportunity-theme-color: #EADAA2;
-
-$curiosity-theme-color:	 rgba(136, 73, 143, 1);
-$theme-color-dark:	  rgba(86, 65, 84, 1);
-$opportunity-theme-color:	 rgba(224, 203, 168, 1);
-$spirit-theme-color:	 rgba(255, 101, 66, 1);
-$theme-color-light:	 rgba(119, 159, 161, 1);
+$curiosity-theme-color: rgb(139, 7, 43);
+$theme-color-dark: rgb(20, 1, 24);
+$opportunity-theme-color:	rgba(206, 66, 87, 1);
+$spirit-theme-color:	rgba(255, 127, 81, 1);
+$theme-color-light: rgba(4, 1, 6, 0.55);
+$font-color-light: rgb(255, 255, 255);
 
 /* Site Fonts */
 $font-family-OpenSans:'Open Sans', sans-serif;
@@ -31,11 +26,15 @@ $header-three-font-size: 1.5em;
 $header-two-font-size: 2em;
 $header-one-font-size: 2.5em;
 
-
+@mixin standard-border($border-color: $theme-color-dark) {
+  border-style: outset;
+  border-width: .2*$scale;
+  border-color: $border-color;
+}
 @mixin navbar-font($font-size: $navbar-font-size) {
   font-family: $font-family-Ubuntu;
   font-size: $font-size;
-  color: $theme-color-light;
+  color: $font-color-light;
   padding-right: 4*$scale;
 }
 

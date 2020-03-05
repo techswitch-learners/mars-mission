@@ -6,8 +6,9 @@
 }
 
 .navBar {
+  @include standard-border();
   text-decoration: none;
-  background-image: linear-gradient(to right, $theme-color-light, $theme-color-dark);
+  background-image: linear-gradient(to right, $theme-color-light, $curiosity-theme-color);
   display: flex;
   width: 100vw;
   height: 11vh;

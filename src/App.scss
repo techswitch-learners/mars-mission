@@ -63,7 +63,7 @@ dd {
   margin-block-start: unset;
   margin-block-end: unset;
   display: unset;
-  color: unset;
+  color: $font-color-light;
   background-color: unset;
 }
 //Forms & Input
@@ -84,10 +84,13 @@ form {
 }
 /* Set core body defaults */
 body {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: $theme-color-dark;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

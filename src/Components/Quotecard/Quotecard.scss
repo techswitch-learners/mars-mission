@@ -1,7 +1,7 @@
 ﻿@import "./src/ConstantsMixins";
 
 .quotecard {
-  border: solid 1px $theme-color-dark;
+  @include standard-border();
   padding: 1em;
   width: 40vw;
   text-align: center;
