@@ -18,16 +18,17 @@ export function DateInputForm(props : DateInputFormProps) {
     }
     
     function handleClick(event: FormEvent) {
+        console.log(date);
         event.preventDefault();
         props.setDateInput(date);
     }
 
     return (
         <div >
-            <form onSubmit={handleClick} className="form">
+            <form data-testid={"on-this-day-form"} onSubmit={handleClick} className="form">
                 <label>DATE:
                     <br/>
-                    <input value={date} onChange={event => setDate(event.target!.value)} type="date" id="date" name="date"
+                    <input data-testid={"date-input"} value={date} onChange={event => setDate(event.target!.value)} type="date" id="date" name="date"
                            min="12-08-05" max={getDateToday()}/>
                 </label>
                 <input type="submit" name="Submit"/>
