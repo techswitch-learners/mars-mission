@@ -7,15 +7,15 @@ export function OnThisDayPage() {
     
     const [dateInput, setDateInput] = useState<string | null>(null);
 
-    useEffect(() => {
-        getDateInput()
-            .then(input=> setDateInput(input));
-    }, []);
+    // useEffect(() => {
+    //     getDateInput()
+    //         .then(input=> setDateInput(input));
+    // }, []);
     
     return (
         <div>
-            <DateInputForm/>
-            <RoverGalleryImage dateInput={dateInput}/>
+            <DateInputForm dateInput={dateInput} setDateInput={setDateInput}/>
+            {dateInput && <RoverGalleryImage dateInput={dateInput}/>}
         </div>
     );
 }

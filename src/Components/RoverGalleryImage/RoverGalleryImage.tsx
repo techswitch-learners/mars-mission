@@ -11,7 +11,7 @@ export function RoverGalleryImage(props : RoverGalleryImageProps) {
     useEffect(() => {
         getRoverImages(props.dateInput)
             .then(image => setRoverImage(image));
-    }, []);
+    }, [props.dateInput]);
 
     if (!roverImage) {
     return <div>Loading</div>
