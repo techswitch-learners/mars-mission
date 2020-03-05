@@ -13,3 +13,4 @@ test('check page contains footer', () => {
    const footer = app.getByTestId("footer");
    expect(footer).toBeInTheDocument();
 });
+
