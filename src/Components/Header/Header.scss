@@ -1,6 +1,4 @@
-﻿﻿
-
-@import './src/ConstantsMixins.scss';
+﻿﻿@import './src/ConstantsMixins.scss';
 
 .header {
   top: 0;
@@ -15,6 +13,28 @@
   height: 11vh;
   justify-content: space-between;
   align-items: center;
+
+  .menu {
+    max-height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    .navItem {
+      padding: 0;
+
+      .navLink {
+        @include navbar-font();
+
+      }
+
+      .navLink:hover {
+        @include text-on-dark-background-hover;
+      }
+    }
+  }
 
 
   /*Hamburger code here:*/
@@ -99,48 +119,35 @@
     height: 10vh;
   }
 
-  .menu {
-    max-height: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-    .navItem {
-      padding: 0;
-
-      .navLink {
-        @include navbar-font();
-
-      }
-
-      .navLink:hover {
-        @include text-on-dark-background-hover;
-      }
-    }
-  }
+  
 
   //no Hamburger for tablets and larger
 
   @media (min-width: 768px) {
-    .menu {
-      padding-right: 2*$scale;
-      max-height: none;
-    }
+    
     .menuIcon {
       display: none;
     }
+
+    .menuButton:checked ~ .menu {
+        background-color: transparent;
+        position: unset;
+        width: unset;
+    }
+    
+    .menu {
+       padding-right: 2*$scale;
+       max-height: none;
+     }
+    
     .menu {
       .navItem {
         .navLink {
           @include navbar-font($navbar-font-size-larger-screens);
         }
       }
-
     }
   }
-  
 }
 
 
