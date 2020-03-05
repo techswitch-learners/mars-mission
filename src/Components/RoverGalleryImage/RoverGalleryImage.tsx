@@ -1,14 +1,15 @@
 ﻿import React, {useState, useEffect} from "react";
 import {getRoverImages, RoverImages} from "../ApiFetch/RoversApiFetch";
+import {DateInputForm} from "../DateInputForm/DateInputForm";
 
 interface RoverGalleryImageProps {
-    
+    dateInput : string | null;
 }
 
 export function RoverGalleryImage(props : RoverGalleryImageProps) {
     const [roverImage, setRoverImage] = useState<RoverImages | null>(null);
     useEffect(() => {
-        getRoverImages()
+        getRoverImages(props.dateInput)
             .then(image => setRoverImage(image));
     }, []);
 

@@ -1,5 +1,7 @@
 import React from "react";
 import "./DateInputForm.scss"
+import {getRoverImages} from "../ApiFetch/RoversApiFetch";
+import {RoverGalleryImage} from "../RoverGalleryImage/RoverGalleryImage";
 
 
 export function DateInputForm() {
@@ -7,16 +9,21 @@ export function DateInputForm() {
         let today: string = new Date().toISOString().split("T")[0];
         return today;
     }
+    
+    function getDateInput(e: MouseEvent) {
+        e.preventDefault();
+        return e.currentTarget.getAttribute;
+    }
 
     return (
         <div >
             <form className="form">
                 <label>DATE:
                     <br/>
-                    <input type="date" id="date" name="date"
+                    <input value={date} type="date" id="date" name="date"
                            min="12-08-05" max={getDateToday()}/>
                 </label>
-                <input type="submit" name="Submit" />
+                <input type="submit" name="Submit" onClick={getDateInput} />
             </form>
         </div>
     );

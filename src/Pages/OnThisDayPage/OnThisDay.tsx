@@ -5,10 +5,17 @@ import {RoverGalleryImage} from "../../Components/RoverGalleryImage/RoverGallery
 
 export function OnThisDayPage() {
     
+    const [dateInput, setDateInput] = useState<string | null>(null);
+
+    useEffect(() => {
+        getDateInput()
+            .then(input=> setDateInput(input));
+    }, []);
+    
     return (
         <div>
             <DateInputForm/>
-            <RoverGalleryImage/>
+            <RoverGalleryImage dateInput={dateInput}/>
         </div>
     );
 }
