@@ -10,7 +10,7 @@ test('check image updates when form date changed', async () => {
         img_src: imageSource,
         earth_date: "2015-06-03",
     };
-    jest.spyOn(Api, "getRoverImages").mockImplementation((dateInput: string | null) => Promise.resolve(fakeImage));
+    jest.spyOn(Api, "getRoverImage").mockImplementation((dateInput: string | null) => Promise.resolve(fakeImage));
     
     const component = render(<OnThisDayPage/>);
     

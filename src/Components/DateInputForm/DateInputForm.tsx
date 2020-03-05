@@ -1,6 +1,6 @@
 import React, {FormEvent, SetStateAction, useState} from "react";
 import "./DateInputForm.scss"
-import {getRoverImages} from "../ApiFetch/RoversApiFetch";
+import {getRoverImage} from "../ApiFetch/RoversApiFetch";
 import {RoverGalleryImage} from "../RoverGalleryImage/RoverGalleryImage";
 
 
@@ -18,7 +18,6 @@ export function DateInputForm(props : DateInputFormProps) {
     }
     
     function handleClick(event: FormEvent) {
-        console.log(date);
         event.preventDefault();
         props.setDateInput(date);
     }

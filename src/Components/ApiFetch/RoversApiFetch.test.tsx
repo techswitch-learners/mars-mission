@@ -1,4 +1,4 @@
-﻿import {getRoverImages} from './RoversApiFetch';
+﻿import {getRoverImage} from './RoversApiFetch';
 
 
 test('check function returns JSON data', async () => {
@@ -69,7 +69,7 @@ test('check function returns JSON data', async () => {
     //@ts-ignore
     jest.spyOn(global, 'fetch').mockImplementation((url: string) => fakeResponse);
 
-    const roverImages = await getRoverImages("2015-06-03");
+    const roverImages = await getRoverImage("2015-06-03");
 
     expect(roverImages.img_src).toBe("http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01004/opgs/edr/fcam/FLB_486615455EDR_F0481570FHAZ00323M_.JPG");
 });
