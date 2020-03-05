@@ -8,6 +8,7 @@ export function DiscoverRoversPage() {
         <div className="discoverRovers">
             <h1>Discover Rovers</h1>
             <h3>Meet the Rovers on The Red Planet</h3>
+            <div className="roverCardContainer">
             <Link to={`${window.location.pathname}/sojourner`}>
                 <Photocard imageUrl={"https://spaceplace.nasa.gov/mars-sojourner/en/sojourner-first.en.jpg"}
                            altText={"Sojourner Rover"}
@@ -26,6 +27,7 @@ export function DiscoverRoversPage() {
                        imageTitle={"Curiosity Rover"}
                            description={"Curiosity is a rover that was sent to Mars to determine if the Red Planet ever had the proper conditions for microbial life to survive."}/>
             </Link>
+            </div>
         </div>
     )
 }
