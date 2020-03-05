@@ -1,11 +1,11 @@
-﻿import React from 'react';
+﻿﻿import React from 'react';
 import {Link} from 'react-router-dom';
-import './NavBar.scss';
+import './Header.scss';
 
-function NavBar() {
+export function Header() {
 
     return (
-      <div>
+      <header data-testid="header">
         <nav className="navBar">
             <input className="menuButton" type="checkbox" id="menuButton"/>
             <label className="menuIcon" htmlFor="menuButton">
@@ -24,8 +24,6 @@ function NavBar() {
                 </li>
             </ul>
         </nav>
-        <div className="spacer"></div>
-    </div>
+    </header>
     );
 }
-export {NavBar};
