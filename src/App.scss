@@ -1,3 +1,5 @@
+//This file should be the only place where in-built components should be styled!
+
 @import './ConstantsMixins.scss';
 
 /* font styles */
@@ -19,6 +21,93 @@ h1{
   font-size: $header-one-font-size;
 }
 
+
+
+
+//Remove Presets
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: unset;
+}
+
+/* Remove default margin */
+html,
+a,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: unset;
+  font-size: unset;
+  text-decoration: unset;
+  font-weight: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  display: unset;
+  color: unset;
+  background-color: unset;
+}
+//Forms & Input
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+  label{
+    input{
+      width: 60vw;
+    }
+  }
+  input {
+    margin: .5rem;
+    height: 30px;
+  }
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+
+/* Make images easier to work with */
+img {
+
+}
+
+
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
 
 
