@@ -54,13 +54,13 @@
   
   .rightAlign{
     @include alignment($background-color-dark, $light-font);
-    background-color: #842b5b;
+    background-color: $image-background-color;
     flex-direction: column;
     
     .roverNavImage{
-      @include nav-image(rgb(182, 188, 244));
+      @include nav-image($background-color-light);
     }
-    @media (min-width: 350px) and (min-width: 600px) {
+    @media (min-width: 350px)  {
       flex-direction : row;
       padding-left: 100px;
     }
@@ -70,10 +70,10 @@
     @include alignment($background-color-light, $background-color-dark);
     flex-direction : column;
     .roverNavImage{
-      @include nav-image(rgb(156, 78, 120));
+      @include nav-image($image-background-color);
     }
 
-    @media (min-width: 350px) and (min-width: 600px) {
+    @media (min-width: 350px)  {
       flex-direction : row-reverse;
       padding-right: 100px;
     }
