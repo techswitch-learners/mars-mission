@@ -24,7 +24,6 @@ export function Header() {
                     </li>
                 </ul>
             </nav>
-{/*          <div className="spacer"> </div>*/}
         </header>
     );
 }
