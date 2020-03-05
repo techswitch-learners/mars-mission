@@ -1,9 +1,4 @@
-﻿@import './src/ConstantsMixins.scss';
-
-﻿.spacer{
-  height: 100px;
-  width: 100%;
-}
+﻿﻿@import './src/ConstantsMixins.scss';
 
 .navBar {
   text-decoration: none;
@@ -21,7 +16,6 @@
   .menuIcon {
     cursor: pointer;
     display: inline-block;
-    /*float: right;*/
     padding: 3*$scale;
     position: relative;
     user-select: none;
