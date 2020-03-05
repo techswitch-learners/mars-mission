@@ -1,5 +1,5 @@
-﻿﻿import React from "react";
-import {Url} from "../Models/Url"
+﻿import React from "react";
+import {Url} from "../../Models/Url";
 import "./Photocard.scss";
 
 interface PhotocardProps {
