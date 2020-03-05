@@ -21,10 +21,6 @@ export function RoverGalleryImage(props : RoverGalleryImageProps) {
         <div>
             <img data-testid={"image-from-rover"} src={roverImage?.img_src} alt=""/>
             <p>Sol: {roverImage?.sol}</p>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
         </div>
     );
     
