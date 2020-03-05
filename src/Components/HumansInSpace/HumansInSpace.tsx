@@ -23,14 +23,14 @@ export function HumansInSpace() {
     );
 }
 
-interface AstronautProps {
+export interface AstronautProps {
     astronaut: Astronaut
 }
 
-function DisplayAstronauts(props: AstronautProps) {
+export function DisplayAstronauts(props: AstronautProps) {
     return (
         <div>
-            <article className="astronautsInSpaceNow">
+            <article data-testid="astronautsInSpaceNow" className="astronautsInSpaceNow">
                 Astronaut: {props.astronaut.name} SpaceCraft: {props.astronaut.craft}
             </article>
         </div>
