@@ -1,11 +1,15 @@
 ﻿import React from "react";
 import {render} from "@testing-library/react";
 import {DiscoverRoversPage} from "./DiscoverRoversPage";
+import {BrowserRouter as Router} from "react-router-dom";
 
 
 test('check if photocards render', () => {
     
-    let discoverPage = render(<DiscoverRoversPage />);
+    let discoverPage = render(
+        <Router>
+        <DiscoverRoversPage />
+        </Router>);
     const photo1 = discoverPage.getByTestId("sojournerPhotocard");
     expect(photo1).toBeInTheDocument();
 
