@@ -2,6 +2,7 @@
 import {Photocard} from "../../Photocard/Photocard";
 import "./DiscoverRoversPage.scss"
 import {Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 
 export function DiscoverRoversPage(): JSX.Element{
@@ -9,7 +10,8 @@ export function DiscoverRoversPage(): JSX.Element{
         <div className="discoverRovers">
             <h1>Discover Rovers</h1>
             <h3>Meet the Rovers on The Red Planet</h3>
-
+            
+            <Router>
             <Link to={`${window.location.pathname}/sojourner`}>
                 <Photocard imageUrl={"https://spaceplace.nasa.gov/mars-sojourner/en/sojourner-first.en.jpg"}
                            altText={"Sojourner Rover"}
@@ -31,6 +33,7 @@ export function DiscoverRoversPage(): JSX.Element{
                       description={"Curiosity is a rover that was sent to Mars to determine if the Red Planet ever had the proper conditions for microbial life to survive."}
                       testid={"curiosityPhotocard"}/>
             </Link>
+            </Router>
         </div>
     )
 }
