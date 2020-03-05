@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.scss';
-import {Footer} from "./Footer/Footer";
+import {Header} from "./Components/Header/Header";
+import {Footer} from "./Components/Footer/Footer";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {Home} from "./Pages/Home/Home";
 import {Curiosity} from "./Pages/CuriosityLandingPage/CuriosityLandingPage";
 import {Spirit} from "./Pages/SpiritLandingPage/SpiritLandingPage";
 import {Opportunity} from "./Pages/OpportunityLandingPage/OpportunityLandingPage";
-import {NavBar} from "./NavBar/NavBar";
 import {WeatherOnMarsPage} from "./Pages/WeatherOnMarsPage/WeatherOnMarsPage";
-import {Home} from "./Pages/Home/Home";
 import {DiscoverRoversPage} from "./Pages/DiscoverRoversPage/DiscoverRoversPage";
-import {HeroImageOfTheDay} from "./Components/HeroImageOfTheDay/HeroImageOfTheDay";
 import {DateInputForm} from "./Components/DateInputForm/DateInputForm";
 
 
@@ -17,10 +16,7 @@ function App() {
 
     return (
         <Router>
-            <header className="header" data-testid="header">
-                <NavBar/>
-            </header>
-            <HeroImageOfTheDay/>
+            <Header/>
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/curiosity" component={Curiosity}/>
