@@ -5,13 +5,18 @@
 //Size Reference
 $scale: 1vw;
 
-//Site Borders
+//Borders & Headers - recolor by theme
 
-@mixin borders($border-color: $accent-color) {
+@mixin theme-borders($border-color: $curiosity-theme-color) {
   border-style: solid;
   border-width: .2*$scale;
   border-color: $border-color;
   border-radius: .2*$scale;
+}
+
+@mixin theme-headers($background-color: $curiosity-theme-color) {
+  background-color: $background-color;
+  font-size: $header-one-font-size;
 }
 
 /* Site colours */

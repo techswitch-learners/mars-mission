@@ -1,5 +1,10 @@
 ﻿@import "../../ConstantsMixins";
-.astronautsInSpaceNow {
-@include borders();
-  
-}
+    
+    .astronautsInSpaceNow {
+         @include theme-borders($opportunity-theme-color);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-self: center;
+      font-size: $header-three-font-size;
+    }   

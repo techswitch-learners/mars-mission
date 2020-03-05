@@ -5,9 +5,17 @@ import {astronautList, SetHumansInSpace} from "../../Pages/HumansAtNasa/HumansIn
 
 export function HumansInSpace() {
     SetHumansInSpace();
-    return (
+    astronautList.map(
+        person => {
+            let name = person.name;
+            let craft = person.craft;
+        return (
         <div>
-            <article className="astronautsInSpaceNow">{astronautList}</article>
-        </div>
-    )
+            <article className="astronautsInSpaceNow">
+                Astronaut: {name} SpaceCraft: {craft}
+            </article>
+        </div>)
+        }
+    );
+    
 }

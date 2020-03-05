@@ -1,7 +1,5 @@
 ﻿@import "./src/ConstantsMixins";
 
-
-
 .hero {
     // TODO - can be removed once WeatherOnMars branch has been merged (contains NavBar fix)
     margin-top: 100px;
@@ -27,19 +25,19 @@
 
 .curiosity{
      h1 {
-         background-color: $curiosity-theme-color;
+         @include theme-headers()
      }
  }
 
 .opportunity{
     h1 {
-        background-color: $opportunity-theme-color;
+        @include theme-headers($opportunity-theme-color)
     }
 }
 
 .spirit{
     h1 {
-        background-color: $spirit-theme-color;
+        @include theme-headers($spirit-theme-color)
     }
 }
 
