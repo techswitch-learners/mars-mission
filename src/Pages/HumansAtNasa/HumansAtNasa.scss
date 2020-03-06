@@ -7,8 +7,22 @@
   flex-direction: column;
   align-items: center;
 }
+
+.pageTitle {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  .title {
+    font-size: larger
+  }
+
+  .description {
+    padding-top: 10px;
+  }
+}
+
 .humansCardContainer {
-  display:flex;
+  display: flex;
   border-radius: 10%;
   flex-wrap: wrap;
   justify-content: center;

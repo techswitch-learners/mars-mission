@@ -6,20 +6,25 @@
   flex-direction: column;
   align-items: center;
   transition: all 0.2s ease-in;
+  width : 90vw;
+  padding: 1rem;
+  border-radius: 10%;
+  font-size : large;
+  text-align : center;
   
   h2 {
     font-size: $header-two-font-size;
     color: $font-color-light;
+    margin: 1em;
   }
 
   img {
     border-radius: 50%;
     animation: fade 2s ease forwards;
     z-index: -1;
-    max-width: 50vw;
     padding: .24em;
+    width: 50vw;
   }
-  
 }
 
 @keyframes fade {

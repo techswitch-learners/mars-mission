@@ -42,16 +42,13 @@
   }
   
   @mixin nav-image($border-color){
-    width: 150px;
-    height: 75%;
+    width: auto;
+    height: 50%;
     border-radius: 50%;
     margin-top: 6px;
     border: solid 5px $border-color;
     
-    @media (min-width: 350px) {
-      width: 200px;
-      height: 68%;
-    }
+  
   }
   
   .rightAlign{
