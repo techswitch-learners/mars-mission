@@ -1,4 +1,4 @@
-﻿@import "./src/ConstantsMixins";
+@import "./src/ConstantsMixins";
 
 
 
@@ -49,9 +49,6 @@
     .hero h1{
         font-size: 40px;
     }
-    /*.hero img {
-        width: 600px;
-    }*/
 }
 
 @media (min-width: 1024px){

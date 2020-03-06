@@ -3,10 +3,12 @@
   margin-top: 100px;
   padding-left: 0;
   
-  .roverNavItem{
+  .roverNavItem {
+    @include navbar-font();
     display: flex;
     align-items: center;
     height : 30vh;
+    font-family: $font-family-headers;
     
     .roverNavLink{
       font-size: 4rem;
@@ -53,12 +55,12 @@
   }
   
   .rightAlign{
-    @include alignment($background-color-dark, $light-font);
-    background-color: $image-background-color;
+    @include alignment($theme-color-dark, $theme-color-light);
+    background-color: $theme-color-dark;
     flex-direction: column;
     
     .roverNavImage{
-      @include nav-image($background-color-light);
+      @include nav-image($theme-color-light);
     }
     @media (min-width: 350px)  {
       flex-direction : row;
@@ -67,10 +69,10 @@
   }
   
   .leftAlign{
-    @include alignment($background-color-light, $background-color-dark);
+    @include alignment($theme-color-light, $theme-color-dark);
     flex-direction : column;
     .roverNavImage{
-      @include nav-image($image-background-color);
+      @include nav-image($theme-color-dark);
     }
 
     @media (min-width: 350px)  {

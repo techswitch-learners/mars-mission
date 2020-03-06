@@ -3,18 +3,16 @@ import {Link} from "react-router-dom";
 
 import {Hero} from "../../Components/Hero/Hero";
 import './CuriosityLandingPage.scss';
-
+import '../RoverLandingPages.scss';
 
 
 export function Curiosity(): JSX.Element {
     return (
-        <div className='hero-image_'>
-            <div className="hero-image">
+        <section className="hero-image">
             <Hero 
                 headingText={"Curiosity"} 
                 rover={"curiosity"} 
                 imageUrl={"https://mars.nasa.gov/system/content_pages/main_images/20_overlay_2000x1000_curiosity.jpg"}/>
-            </div>
             <ul className="childList">
                 <li>
                     <Link className="childLink" to='/curiosity/on-this-day-on-mars'>On this day on Mars</Link>
@@ -29,6 +27,6 @@ export function Curiosity(): JSX.Element {
                     <Link className="childLink" to='/curiosity/life-on-mars'>Life On Mars</Link>
                 </li>
             </ul>
-        </div>
+        </section>
     );
 }

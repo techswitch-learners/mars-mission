@@ -1,7 +1,7 @@
 ﻿﻿import React from "react";
 import './WeatherOnMarsImage.scss';
 
-function WeatherOnMarsImage() {
+export function WeatherOnMarsImage() {
 
 
     return (
@@ -13,4 +13,3 @@ function WeatherOnMarsImage() {
             
     );
 }
-export {WeatherOnMarsImage};

@@ -2,16 +2,10 @@
 import {WeatherOnMarsImage} from "../../Components/WeatherOnMarsImage/WeatherOnMarsImage";
 import './WeatherOnMarsPage.scss';
 
-
-function WeatherOnMarsPage() {
-
-
+export function WeatherOnMarsPage() {
     return (
         <div className="weatherPage">
             <WeatherOnMarsImage/>
         </div>
     );
 }
-
-
-export {WeatherOnMarsPage};
