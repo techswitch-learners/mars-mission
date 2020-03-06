@@ -17,9 +17,6 @@ export function Spirit() {
                 <li>
                     <Link className="childLink" to='/spirit/inspirational-quotes'>Inspirational Quotes</Link>
                 </li>
-                <li>
-                    <Link className="childLink" to='/spirit/social-media-gallery'>Social Media Gallery</Link>
-                </li>
             </ul>
         </div>
     );

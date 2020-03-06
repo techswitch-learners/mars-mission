@@ -24,9 +24,6 @@ export function Curiosity(): JSX.Element {
                 <li>
                     <Link className="childLink" to='/curiosity/weather-on-mars'>Weather On Mars</Link>
                 </li>
-                <li>
-                    <Link className="childLink" to='/curiosity/life-on-mars'>Life On Mars</Link>
-                </li>
             </ul>
         </section>
     );
