@@ -1,6 +1,6 @@
 ﻿@import "./src/ConstantsMixins";
 
-.onThisDay{
+.roverGalleryImage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,28 +8,22 @@
   
   h2 {
     font-size: $header-two-font-size;
+    color: $accent-color;
   }
-  
-  h3 {
-    font-size: $header-three-font-size;
-  }
-  
-  .photocard {
-    border: none;
-    img {
-      border-radius: 50%;
-      animation: fade 2s ease forwards;
-    }
+
+  img {
+    border-radius: 50%;
+    animation: fade 2s ease forwards;
   }
   
 }
 
-
-@keyframes fade{
-  from{
+@keyframes fade {
+  from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
 }
+
