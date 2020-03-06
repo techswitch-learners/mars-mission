@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import {Photocard} from "../../Photocard/Photocard";
+import {Photocard} from "../../Components/Photocard/Photocard";
 import "./DiscoverRoversPage.scss"
 import {Link} from "react-router-dom";
 
