@@ -3,10 +3,6 @@
 
 
 .hero {
-    // TODO - can be removed once WeatherOnMars branch has been merged (contains NavBar fix)
-    margin-top: 100px;
-    //
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +16,7 @@
 
     img {
         height: auto;
-        width: 75vw;
+        width: 100%;
     }
 }
 
@@ -53,9 +49,9 @@
     .hero h1{
         font-size: 40px;
     }
-    .hero img {
+    /*.hero img {
         width: 600px;
-    }
+    }*/
 }
 
 @media (min-width: 1024px){

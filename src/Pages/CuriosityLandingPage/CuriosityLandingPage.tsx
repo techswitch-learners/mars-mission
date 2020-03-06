@@ -8,12 +8,13 @@ import './CuriosityLandingPage.scss';
 
 export function Curiosity(): JSX.Element {
     return (
-        <div>
+        <div className='hero-image_'>
+            <div className="hero-image">
             <Hero 
                 headingText={"Curiosity"} 
                 rover={"curiosity"} 
-                imageUrl={"https://spaceplace.nasa.gov/mars-curiosity/en/curiosity-here.en.jpg"}
-            />
+                imageUrl={"https://mars.nasa.gov/system/content_pages/main_images/20_overlay_2000x1000_curiosity.jpg"}/>
+            </div>
             <ul className="childList">
                 <li>
                     <Link className="childLink" to='/curiosity/on-this-day-on-mars'>On this day on Mars</Link>
