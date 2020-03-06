@@ -1,7 +1,6 @@
 import React, {FormEvent, SetStateAction, useState} from "react";
 import "./DateInputForm.scss"
-import {getRoverImage} from "../ApiFetch/RoversApiFetch";
-import {RoverGalleryImage} from "../RoverGalleryImage/RoverGalleryImage";
+
 
 
 interface DateInputFormProps {
