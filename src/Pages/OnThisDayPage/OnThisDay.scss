@@ -1,0 +1,19 @@
+﻿* {
+  transition: all 0.2s ease-in;
+}
+
+.onThisDay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
