@@ -1,6 +1,7 @@
 ﻿@import "./src/ConstantsMixins";
 
 .roverGalleryImage {
+  margin:1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +16,8 @@
     border-radius: 50%;
     animation: fade 2s ease forwards;
     z-index: -1;
+    max-width: 50vw;
+    padding: .24em;
   }
   
 }
