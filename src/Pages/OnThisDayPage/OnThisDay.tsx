@@ -1,4 +1,4 @@
-﻿import React, {useEffect, useState} from "react";
+﻿import React, {useState} from "react";
 import {DateInputForm} from "../../Components/DateInputForm/DateInputForm";
 import {RoverGalleryImage} from "../../Components/RoverGalleryImage/RoverGalleryImage";
 
