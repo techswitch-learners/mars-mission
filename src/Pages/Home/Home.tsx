@@ -9,17 +9,17 @@ export function Home(): JSX.Element {
         <div>
         <HeroImageOfTheDay/>
         <ul className="roverNav">
-            <RoverNavItem imageUrl={`${process.env.PUBLIC_URL}/Images/curiosity.jpg`}
+            <RoverNavItem imageUrl={`${process.env.PUBLIC_URL}/Images/curiosity.en.png`}
                           align={"rightAlign"}
                           altText={"Curiosity Rover"}
                           description={"Curiosity"}
                           destination={"/curiosity"}/>
-            <RoverNavItem imageUrl={`${process.env.PUBLIC_URL}/Images/opportunity.jpg`}
+            <RoverNavItem imageUrl={`${process.env.PUBLIC_URL}/Images/spirit-opportunity.en.png`}
                           align={"leftAlign"}
                           altText={"Opportunity Rover"}
                           description={"Opportunity"}
                           destination={"/opportunity"}/>
-            <RoverNavItem imageUrl={`${process.env.PUBLIC_URL}/Images/spirit.jpg`}
+            <RoverNavItem imageUrl={`${process.env.PUBLIC_URL}/Images/sojourner.en.png`}
                           align={"rightAlign"}
                           altText={"Spirit Rover"}
                           description={"Spirit"}
