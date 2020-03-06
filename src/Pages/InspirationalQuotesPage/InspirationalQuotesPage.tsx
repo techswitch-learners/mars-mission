@@ -3,11 +3,11 @@ import {Quotecard} from "../../Components/Quotecard/Quotecard";
 import "./InspirationalQuotesPage.scss"
 
 interface Quote {
-    name : string;
+    name: string;
     quote: string;
 }
 
-const quotes : Quote[] = [
+const quotes: Quote[] = [
     {
         name: "Konstantin Tsiolkovsky",
         quote: "“The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever.”"
@@ -150,12 +150,9 @@ const quotes : Quote[] = [
     }
 ];
 
-
 export function InspirationalQuotesPage() {
-
     
-
-    var numbers : number[] = [];
+    var numbers: number[] = [];
     while (numbers.length < 3) {
         var num = Math.floor(Math.random() * (quotes.length));
         if (!numbers.includes(num)) {
@@ -169,8 +166,9 @@ export function InspirationalQuotesPage() {
             <ul className="quotes">
                 {numbers
                     .map(number => quotes[number])
-                        .map(quote => <li><Quotecard quote={quote.quote} author={quote.name}/></li>)
+                    .map(quote => <li><Quotecard quote={quote.quote} author={quote.name}/></li>)
                 }
+
             </ul>
         </article>
 

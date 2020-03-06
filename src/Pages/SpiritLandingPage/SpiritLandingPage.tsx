@@ -22,7 +22,5 @@ export function Spirit() {
                 </li>
             </ul>
         </div>
-
-
     );
 }

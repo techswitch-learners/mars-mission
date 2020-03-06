@@ -5,13 +5,13 @@ import {Hero} from "../../Components/Hero/Hero";
 import '../RoverLandingPages.scss';
 
 
-
 export function Curiosity(): JSX.Element {
     return (
         <section className="hero-block">
             <Hero 
                 headingText={"Curiosity"} 
                 rover={"curiosity"} 
+
                 imageUrl={"https://spaceplace.nasa.gov/mars-curiosity/en/curiosity-here.en.jpg"}
             />
             <ul className="childList">

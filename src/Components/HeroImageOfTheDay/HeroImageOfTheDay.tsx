@@ -4,16 +4,16 @@ import {getImageOfTheDay, ImageOfTheDay} from "../ApiFetch/ApodApiFetch";
 
 export function HeroImageOfTheDay() {
     const [imageOfTheDay, setImageOfTheDay] = useState<ImageOfTheDay | null>(null);
-    
+
     useEffect(() => {
         getImageOfTheDay()
             .then(image => setImageOfTheDay(image));
     }, []);
-    
+
     if (!imageOfTheDay) {
         return <div>Loading</div>
     }
-    
+
     return (
         <section className="imageOfTheDay">
             <MediaViewer  imageOfTheDay={imageOfTheDay}/>
@@ -35,7 +35,7 @@ function MediaViewer(props: MediaViewerProps): JSX.Element {
             />
         );
     }
-    
+
     return (
         <img className="contentImage"
              data-testid={"image-viewer"}
