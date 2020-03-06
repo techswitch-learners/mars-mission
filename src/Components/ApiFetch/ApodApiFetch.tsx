@@ -1,5 +1,7 @@
-﻿export interface ImageOfTheDay {
-    url: string;
+﻿import {Url} from "../../Models/Url";
+
+export interface ImageOfTheDay {
+    url: Url;
     explanation: string;
     title: string;
     media_type: string;
