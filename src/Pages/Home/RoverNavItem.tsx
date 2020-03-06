@@ -7,17 +7,17 @@ import {Link} from "react-router-dom";
 
 interface roverNavItemProps {
     imageUrl: Url;
-    align : AlignType;
-    altText : string;
-    description : string;
-    destination : RoverLinks;
+    align: AlignType;
+    altText: string;
+    description: string;
+    destination: RoverLinks;
 }
 
-export function RoverNavItem (props : roverNavItemProps):JSX.Element {
+export function RoverNavItem(props: roverNavItemProps): JSX.Element {
     return (
         <Link className={`roverNavItem ${props.align}`} to={props.destination}>
             <img className="roverNavImage" src={props.imageUrl} alt={props.altText}/>
-            <p className="roverNavLink" >{props.description}</p>
+            <p className="roverNavLink">{props.description}</p>
         </Link>
     )
 }
