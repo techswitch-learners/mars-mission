@@ -1,5 +1,12 @@
-@import './src/ConstantsMixins.scss';
+//@import './src/ConstantsMixins.scss';
 
 .humansAtNasaBody {
   text-align: center;
+}
+.humansCardContainer {
+  display:flex;
+  border-radius: 10%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

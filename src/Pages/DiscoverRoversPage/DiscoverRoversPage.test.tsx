@@ -5,10 +5,10 @@ import {BrowserRouter as Router} from "react-router-dom";
 
 
 test('check if photocards render', () => {
-    
+
     let discoverPage = render(
         <Router>
-        <DiscoverRoversPage />
+            <DiscoverRoversPage />
         </Router>);
     const photo1 = discoverPage.getByTestId("sojournerPhotocard");
     expect(photo1).toBeInTheDocument();
