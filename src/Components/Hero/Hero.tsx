@@ -1,10 +1,12 @@
 ﻿import React from "react";
 import {Url} from "../../Models/Url";
+import {RoverName} from "../../Models/RoverName";
+import {RoverNameLowerCase} from "../../Models/RoverNameLowerCase";
 import './Hero.scss';
 
 interface HeroProps{
-    headingText : 'Curiosity' | 'Spirit'  | 'Opportunity';
-    rover : 'curiosity' | 'spirit'  | 'opportunity';
+    headingText : RoverName;
+    rover : RoverNameLowerCase;
     imageUrl : Url;
 }
 
