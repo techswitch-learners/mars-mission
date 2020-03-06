@@ -15,10 +15,16 @@
   }
   
   .photocard {
+    margin: 1em;
     border: none;
     img {
+      padding: .25em;
       border-radius: 50%;
       animation: fade 2s ease forwards;
+      z-index: -1;
+    }
+    .contentTitle{
+      text-decoration: none;
     }
   }
   
