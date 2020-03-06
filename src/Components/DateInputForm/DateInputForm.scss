@@ -3,6 +3,7 @@
 
 .dateInputForm {
   form {
+    font-size: $header-two-font-size;
     input {
       margin: 1em;
       width: 50vw;
@@ -11,9 +12,10 @@
       }
     }
     .dateInputButton {
-      width: 10vw;
+      width: 15vw;
       border-radius: 10px;
       border: none;
+      line-height: normal;
     }
   }
   margin-bottom: 5em;
