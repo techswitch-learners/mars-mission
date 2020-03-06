@@ -6,8 +6,9 @@
 }
 
 .navBar {
+  @include standard-border();
   text-decoration: none;
-  background-image: linear-gradient(to right, $light-font, $background-color-dark);
+  background-image: linear-gradient(to right, $theme-color-light, $curiosity-theme-color);
   display: flex;
   width: 100vw;
   height: 11vh;
@@ -49,7 +50,7 @@
     justify-self: flex-end;
 
     .navIcon {
-      background: $background-color-light;
+      background: $theme-color-light;
       display: block;
       height: 2px;
       position: relative;
@@ -59,7 +60,7 @@
 
     .navIcon:before,
     .navIcon:after {
-      background: $background-color-light;
+      background: $theme-color-light;
       content: '';
       display: block;
       height: 100%;
@@ -82,7 +83,7 @@
   }
 
   .menuButton:checked ~ .menu {
-    background-color: $background-color-dark;
+    background-color: $theme-color-dark;
     position: fixed;
     top: 11vh;
     right: 0;

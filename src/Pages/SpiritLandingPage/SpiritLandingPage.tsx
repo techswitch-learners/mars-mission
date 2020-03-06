@@ -2,7 +2,7 @@
 
 ﻿import React from "react";
 import {Hero} from "../../Components/Hero/Hero";
-import './SpiritLandingPage.scss';
+import '../RoverLandingPages.scss';
 
 
 export function Spirit() {
@@ -22,7 +22,5 @@ export function Spirit() {
                 </li>
             </ul>
         </div>
-
-
     );
 }
