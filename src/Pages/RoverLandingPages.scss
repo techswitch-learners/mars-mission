@@ -1,0 +1,49 @@
+﻿@import "../ConstantsMixins";
+@import "../App";
+
+.hero {
+  overflow: -moz-scrollbars-none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    @include navbar-font();
+    font-size: $header-two-font-size;
+    width: 100vw;
+    height: auto;
+    margin-bottom: $scale;
+    text-align: center;
+  }
+
+  img {
+    height: auto;
+    max-width: 75vw;
+  }
+}
+
+.childList a {
+ @include navbar-font();
+  font-size: $header-two-font-size;
+  text-align: center;
+}
+.curiosity{
+  h1 {
+    @include navbar-font();
+    background-color: $curiosity-theme-color;
+  }
+}
+
+.opportunity{
+  h1 {
+    @include navbar-font();
+    background-color: $opportunity-theme-color;
+  }
+}
+
+.spirit{
+  h1 {
+    @include navbar-font();
+    background-color: $spirit-theme-color;
+  }
+}

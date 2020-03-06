@@ -1,0 +1,1 @@
+﻿export type RoverNameLowerCase = 'curiosity' | 'spirit'  | 'opportunity';
