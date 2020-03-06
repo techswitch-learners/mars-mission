@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   transition: all 0.2s ease-in;
-  max-width : 90vw;
+  width : 90vw;
   padding: 1rem;
   border-radius: 10%;
   font-size : large;
@@ -23,7 +23,7 @@
     animation: fade 2s ease forwards;
     z-index: -1;
     padding: .24em;
-    max-width: 50vw;
+    width: 50vw;
   }
 }
 

@@ -6,11 +6,15 @@
     input {
       margin: 1em;
       width: 50vw;
+      &:hover {
+        border: solid 1px $spirit-theme-color;
+      }
     }
     .dateInputButton {
       width: 10vw;
-      border-radius: 10%;
+      border-radius: 10px;
       border: none;
     }
   }
+  margin-bottom: 5em;
 }
