@@ -11,7 +11,7 @@ interface HeroProps{
 export function Hero(props : HeroProps){
     
     return(
-        <div className={`hero ${props.rover}`}>
+        <div data-testid="hero" className={`hero ${props.rover}`}>
             <h1 className='heroTitle'>{props.headingText}</h1>
             <img className='heroImage' src={props.imageUrl}/>
         </div>
