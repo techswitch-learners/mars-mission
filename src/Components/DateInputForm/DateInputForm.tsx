@@ -15,16 +15,15 @@ export function DateInputForm(props: DateInputFormProps) {
     }
 
     return (
-        <div>
+        <div className="dateInputForm">
             <form data-testid={"on-this-day-form"} onSubmit={handleClick} className="form">
                 <label>DATE:
                     <br/>
 
                     <input data-testid={"date-input"} value={date} onChange={event => setDate(event.target!.value)} type="date" id="date" name="date"
                            min="2012-08-06" max="2019-09-28"/>
-
                 </label>
-                <input type="submit" name="Submit"/>
+                <input className="dateInputButton" type="submit" name="Submit"/>
             </form>
         </div>
     );
