@@ -86,10 +86,6 @@ export function InspirationalQuotesPage() {
             numbers.push(num)
         }
     }
-    
-    const quoteOne: number = numbers[0];
-    const quoteTwo: number = numbers[1];
-    const quoteThree: number = numbers[2];
 
     return (
         <article className="quotes-container">
