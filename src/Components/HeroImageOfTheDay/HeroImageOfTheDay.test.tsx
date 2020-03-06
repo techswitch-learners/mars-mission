@@ -21,7 +21,7 @@ describe("Hero Image", () => {
         await wait(() => expect(component.getByTestId('video-player')).toBeInTheDocument());
         expect(component.queryByTestId('image-viewer')).toBeNull();
     });
-    
+
     it ('shows image when media type is image', async () => {
         const body = {
             date: "2020-03-03",
