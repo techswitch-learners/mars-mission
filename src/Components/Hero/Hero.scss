@@ -1,1 +1,60 @@
-﻿
+@import "./src/ConstantsMixins";
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        width: 100vw;
+        text-align: center;
+        color: white;
+        font-size: $header-one-font-size;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.heroTitle{
+    font-size: 30px;
+    
+}
+.curiosity{
+    h1 {
+        background-color: $curiosity-theme-color;
+        font-size: 40px;
+    }
+}
+
+.opportunity{
+    h1 {
+        background-color: $opportunity-theme-color;
+    }
+}
+
+.spirit{
+    h1 {
+        background-color: $spirit-theme-color;
+    }
+}
+
+@media (min-width: 500px){
+    .hero h1{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px){
+    .hero h1{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1024px){
+    .hero h1{
+        font-size: 55px;
+    }
+}
