@@ -1,2 +1,16 @@
 @import "./src/App";
 @import "./src/ConstantsMixins";
+
+.dateInputForm {
+  form {
+    input {
+      margin: 1em;
+      width: 50vw;
+    }
+    .dateInputButton {
+      width: 10vw;
+      border-radius: 10%;
+      border: none;
+    }
+  }
+}
