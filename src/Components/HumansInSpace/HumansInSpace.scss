@@ -1,0 +1,21 @@
+﻿@import "../../ConstantsMixins";
+    
+article .astronautsInSpaceNow {
+         @include theme-borders($opportunity-theme-color);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-self: center;
+      font-family: Ubuntu;
+  
+    }   
+
+div .numberOfHumansInSpace {
+  font-family: Ubuntu;
+  font-size: $para-font-size;
+  border : solid 2px #ce6c47;
+  max-height : 600px;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10%;
+}

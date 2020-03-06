@@ -1,6 +1,7 @@
 ﻿﻿@import "./src/ConstantsMixins";
 .footer {
     bottom: 0;
+    position: fixed;
     padding: 5px;
     height: 3vh;
     min-height: 30px;

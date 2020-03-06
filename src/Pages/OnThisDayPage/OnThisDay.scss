@@ -1,0 +1,41 @@
+﻿@import "./src/ConstantsMixins";
+
+.onThisDay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  
+  h2 {
+    font-size: $header-two-font-size;
+  }
+  
+  h3 {
+    font-size: $header-three-font-size;
+  }
+  
+  .photocard {
+    margin: 1em;
+    border: none;
+    img {
+      padding: .25em;
+      border-radius: 50%;
+      animation: fade 2s ease forwards;
+      z-index: -1;
+    }
+    .contentTitle{
+      text-decoration: none;
+    }
+  }
+  
+}
+
+
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -9,11 +9,6 @@ interface DateInputFormProps {
 export function DateInputForm(props: DateInputFormProps) {
     const [date, setDate] = useState("");
 
-    function getDateToday() {
-        let today: string = new Date().toISOString().split("T")[0];
-        return today;
-    }
-
     function handleClick(event: FormEvent) {
         event.preventDefault();
         props.setDateInput(date);
@@ -24,9 +19,10 @@ export function DateInputForm(props: DateInputFormProps) {
             <form data-testid={"on-this-day-form"} onSubmit={handleClick} className="form">
                 <label>DATE:
                     <br/>
-                    <input data-testid={"date-input"} value={date} onChange={event => setDate(event.target!.value)}
-                           type="date" id="date" name="date"
-                           min="12-08-05" max={getDateToday()}/>
+
+                    <input data-testid={"date-input"} value={date} onChange={event => setDate(event.target!.value)} type="date" id="date" name="date"
+                           min="2012-08-06" max="2019-09-28"/>
+
                 </label>
                 <input type="submit" name="Submit"/>
             </form>
