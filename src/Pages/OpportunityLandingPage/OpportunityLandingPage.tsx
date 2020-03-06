@@ -16,9 +16,6 @@ export function Opportunity() {
                 <li>
                     <Link className="childLink" to='/opportunity/humans'>Humans at NASA</Link>
                 </li>
-                <li>
-                    <Link className="childLink" to='/opportunity/who-is-in-space'>Who is in space</Link>
-                </li>
             </ul>
         </div>
     );

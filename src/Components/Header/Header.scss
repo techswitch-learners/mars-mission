@@ -17,6 +17,7 @@
 
   .menu {
     max-height: 0;
+    max-width: 170px;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -50,7 +51,7 @@
     justify-self: flex-end;
 
     .navIcon {
-      background: $theme-color-light;
+      background: $font-color-light;
       display: block;
       height: 2px;
       position: relative;
@@ -60,7 +61,7 @@
 
     .navIcon:before,
     .navIcon:after {
-      background: $theme-color-light;
+      background: $font-color-light;
       content: '';
       display: block;
       height: 100%;
@@ -139,6 +140,7 @@
     .menu {
        padding-right: 2*$scale;
        max-height: none;
+      max-width: unset;
      }
     
     .menu {
