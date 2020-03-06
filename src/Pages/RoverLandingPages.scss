@@ -1,18 +1,15 @@
 ﻿@import "../ConstantsMixins";
 @import "../App";
-* {
-  overflow: -moz-scrollbars-none;
-}
 
 .hero {
-
-
+  overflow: -moz-scrollbars-none;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1 {
     @include navbar-font();
+    font-size: $header-two-font-size;
     width: 100vw;
     height: auto;
     margin-bottom: $scale;
@@ -21,11 +18,15 @@
 
   img {
     height: auto;
-    width: 75vw;
+    max-width: 75vw;
   }
 }
 
-
+.childList a {
+ @include navbar-font();
+  font-size: $header-two-font-size;
+  text-align: center;
+}
 .curiosity{
   h1 {
     background-color: $curiosity-theme-color;

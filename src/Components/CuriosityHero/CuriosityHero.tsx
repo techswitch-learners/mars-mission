@@ -5,7 +5,7 @@ export function CuriosityHero(prop: {imageUrl: string}){
     
     return (
         <div>
-            <img src={prop.imageUrl} />
+            <img src={prop.imageUrl} alt="curiosity"/>
         </div>
     );
 }

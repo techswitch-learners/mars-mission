@@ -8,7 +8,7 @@ import '../RoverLandingPages.scss';
 
 export function Curiosity(): JSX.Element {
     return (
-        <div>
+        <section className="hero-block">
             <Hero 
                 headingText={"Curiosity"} 
                 rover={"curiosity"} 
@@ -28,6 +28,6 @@ export function Curiosity(): JSX.Element {
                     <Link className="childLink" to='/curiosity/life-on-mars'>Life On Mars</Link>
                 </li>
             </ul>
-        </div>
+        </section>
     );
 }
