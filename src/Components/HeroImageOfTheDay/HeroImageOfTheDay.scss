@@ -1,13 +1,14 @@
 ﻿@import "./src/ConstantsMixins";
 
   .imageOfTheDay {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: $theme-color-dark;
+      justify-content: space-between;
+      color: $theme-color-light;
       .contentImage {
-          width: 100vw;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          background-color: $theme-color-dark;
-          justify-content: center;
-          color: $theme-color-light;
+          
       }
     }

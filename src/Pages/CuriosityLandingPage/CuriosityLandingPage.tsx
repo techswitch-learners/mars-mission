@@ -2,7 +2,7 @@
 import {Link} from "react-router-dom";
 
 import {Hero} from "../../Components/Hero/Hero";
-import './CuriosityLandingPage.scss';
+import '../RoverLandingPages.scss';
 
 
 
