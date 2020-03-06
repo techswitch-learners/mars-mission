@@ -14,7 +14,7 @@ import {OnThisDayPage} from "./Pages/OnThisDayPage/OnThisDay";
 import {HumansAtNasa} from "./Pages/HumansAtNasa/HumansAtNasa";
 
 
-function App() {
+export default function App() {
 
     return (
         <Router>
@@ -32,8 +32,5 @@ function App() {
             </Switch>
             <Footer/>
         </Router>
-
     );
 }
-
-export default App;
