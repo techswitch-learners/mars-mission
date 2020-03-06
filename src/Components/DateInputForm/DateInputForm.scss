@@ -1,2 +1,22 @@
 @import "./src/App";
 @import "./src/ConstantsMixins";
+
+.dateInputForm {
+  form {
+    font-size: $header-two-font-size;
+    input {
+      margin: 1em;
+      width: 50vw;
+      &:hover {
+        border: solid 1px $spirit-theme-color;
+      }
+    }
+    .dateInputButton {
+      width: 15vw;
+      border-radius: 10px;
+      border: none;
+      line-height: normal;
+    }
+  }
+  margin-bottom: 5em;
+}
