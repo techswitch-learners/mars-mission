@@ -33,7 +33,7 @@
       }
 
       .navLink:hover {
-        @include text-on-dark-background-hover;
+        color: $opportunity-theme-color;
       }
     }
   }
