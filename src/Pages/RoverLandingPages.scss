@@ -29,18 +29,21 @@
 }
 .curiosity{
   h1 {
+    @include navbar-font();
     background-color: $curiosity-theme-color;
   }
 }
 
 .opportunity{
   h1 {
+    @include navbar-font();
     background-color: $opportunity-theme-color;
   }
 }
 
 .spirit{
   h1 {
+    @include navbar-font();
     background-color: $spirit-theme-color;
   }
 }

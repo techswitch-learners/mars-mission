@@ -18,7 +18,7 @@ export function HeroImageOfTheDay() {
         <section className="imageOfTheDay">
             <MediaViewer  imageOfTheDay={imageOfTheDay}/>
             <h3 className="contentTitle">{imageOfTheDay.title}</h3>
-            <p className="contentDescription" id="apod-description">{imageOfTheDay.explanation}</p>
+            <p className="contentDescription" >{imageOfTheDay.explanation}</p>
         </section>
     )
 }
