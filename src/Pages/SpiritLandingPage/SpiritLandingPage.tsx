@@ -2,7 +2,7 @@
 
 ﻿import React from "react";
 import {Hero} from "../../Components/Hero/Hero";
-import '../RoverLandingPages.scss';
+
 
 
 export function Spirit() {
@@ -11,14 +11,11 @@ export function Spirit() {
             <Hero
                 headingText={"Spirit"}
                 rover={"spirit"}
-                imageUrl={"https://img.itch.zone/aW1hZ2UvMTk2MTE0LzkxNjY1My5wbmc=/original/hIpl%2Bw.png"}
+                imageUrl={"https://mars.nasa.gov/system/content_pages/main_images/22_22_overlay_2000x1000_insight.jpg"}
             />
             <ul className="childList">
                 <li>
-                    <Link className="childLink" to='/spirit/inspirational-quotes'>Inspirational Quotes</Link>
-                </li>
-                <li>
-                    <Link className="childLink" to='/spirit/social-media-gallery'>Social Media Gallery</Link>
+                    <Link className="childLink" to='/spirit/inspirational-quotes'>Inspirational Quotes ></Link>
                 </li>
             </ul>
         </div>

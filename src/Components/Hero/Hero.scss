@@ -1,7 +1,5 @@
 @import "./src/ConstantsMixins";
 
-
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -11,7 +9,7 @@
         width: 100vw;
         text-align: center;
         color: white;
-        font-size: 22px;
+        font-size: $header-one-font-size;
     }
 
     img {
@@ -20,10 +18,14 @@
     }
 }
 
-
+.heroTitle{
+    font-size: 30px;
+    
+}
 .curiosity{
     h1 {
         background-color: $curiosity-theme-color;
+        font-size: 40px;
     }
 }
 

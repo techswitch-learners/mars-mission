@@ -18,7 +18,7 @@
 
   img {
     height: auto;
-    max-width: 75vw;
+    max-width: 100%;
   }
 }
 
@@ -29,21 +29,24 @@
 }
 .curiosity{
   h1 {
-    @include navbar-font();
     background-color: $curiosity-theme-color;
+    font-size: $header-one-font-size;
+    background-color: black;
   }
 }
 
 .opportunity{
   h1 {
-    @include navbar-font();
     background-color: $opportunity-theme-color;
+    font-size: $header-one-font-size;
+    background-color: black;
   }
 }
 
 .spirit{
   h1 {
-    @include navbar-font();
     background-color: $spirit-theme-color;
+    font-size: $header-one-font-size;
+    background-color: black;
   }
 }
