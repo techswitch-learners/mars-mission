@@ -5,13 +5,12 @@ import {Hero} from "../../Components/Hero/Hero";
 import './CuriosityLandingPage.scss';
 
 
-
 export function Curiosity(): JSX.Element {
     return (
         <div>
-            <Hero 
-                headingText={"Curiosity"} 
-                rover={"curiosity"} 
+            <Hero
+                headingText={"Curiosity"}
+                rover={"curiosity"}
                 imageUrl={"https://spaceplace.nasa.gov/mars-curiosity/en/curiosity-here.en.jpg"}
             />
             <ul className="childList">
