@@ -18,6 +18,7 @@ $scale: 1vw;
   font-size: $header-one-font-size;
 }
 
+
 /* Site colours */
 $curiosity-theme-color: rgba(94, 7, 30, 0.91);
 $theme-color-dark: rgb(12, 2, 16);
@@ -60,4 +61,15 @@ $header-one-font-size: 2.5em;
 @mixin text-on-dark-background-hover {
   text-decoration: none;
   color: $theme-color-light;
+}
+@media only screen and (max-width: 768px) {
+ max-width: 768px;
+h3 .contentTitle {
+  font-size: $header-two-font-size;
+  
+}
+  
+}
+h3 .contentTitle {
+  font-size: $header-two-font-size;
 }
