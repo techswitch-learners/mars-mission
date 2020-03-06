@@ -1,7 +1,6 @@
 ﻿//Please read README section on Styling before editing or creating SCSS
 // This is your home for all shared themes and styles, please import it
 
-
 //Size Reference
 $scale: 1vw;
 
@@ -14,14 +13,15 @@ $theme-color-light: rgba(4, 1, 6, 0.55);
 $font-color-light: rgb(255, 255, 255);
 
 /* Site Fonts */
-$font-family-OpenSans:'Open Sans', sans-serif;
-$font-family-Ubuntu:'Ubuntu', sans-serif;
+$font-family-OpenSans:'Roboto', sans-serif;
+$font-family-headers:'Oxanium', cursive;
+
 
 $para-font-size:0.5em;
 $quote-font-size:.95em;
 $label-font-size:.90em;
-$navbar-font-size: 6*$scale;
-$navbar-font-size-larger-screens: 4*$scale;
+$navbar-font-size: 14pt;
+$navbar-font-size-larger-screens: 30pt;
 $header-three-font-size: 1.5em;
 $header-two-font-size: 2em;
 $header-one-font-size: 2.5em;
@@ -32,7 +32,7 @@ $header-one-font-size: 2.5em;
   border-color: $border-color;
 }
 @mixin navbar-font($font-size: $navbar-font-size) {
-  font-family: $font-family-Ubuntu;
+  font-family: $font-family-headers;
   font-size: $font-size;
   color: $font-color-light;
   padding-right: 4*$scale;

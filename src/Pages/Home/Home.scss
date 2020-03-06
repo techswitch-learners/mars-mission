@@ -3,10 +3,12 @@
   margin-top: 100px;
   padding-left: 0;
   
-  .roverNavItem{
+  .roverNavItem {
+    @include navbar-font();
     display: flex;
     align-items: center;
     height : 30vh;
+    font-family: $font-family-headers;
     
     .roverNavLink{
       font-size: 4rem;
