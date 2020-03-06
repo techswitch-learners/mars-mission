@@ -1,7 +1,7 @@
 ﻿﻿import React from "react";
 import {Link} from "react-router-dom";
 import {Hero} from "../../Components/Hero/Hero";
-import './OpportunityLandingPage.scss';
+import '../RoverLandingPages.scss';
 
 
 export function Opportunity() {
